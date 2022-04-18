@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ServerDatabase\NodeList.cpp">
+    <ClCompile Include="lab3_b.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\ServerDatabase\Message.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\ServerDatabase\stringbin.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\ServerDatabase\myTime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="lab3_b.cpp">
+    <ClCompile Include="..\..\ServerDatabase\NodeList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ServerDatabase\stringbin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
