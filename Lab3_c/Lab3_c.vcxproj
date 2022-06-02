@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="Lab3_c.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lab3_a\MySorts.hpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
