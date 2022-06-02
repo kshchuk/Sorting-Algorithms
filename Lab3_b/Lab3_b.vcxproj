@@ -178,6 +178,7 @@
     <ClInclude Include="..\..\ServerDatabase\myTime.h" />
     <ClInclude Include="..\..\ServerDatabase\NodeList.h" />
     <ClInclude Include="..\..\ServerDatabase\stringbin.h" />
+    <ClInclude Include="MySorts.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
