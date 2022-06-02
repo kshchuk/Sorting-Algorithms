@@ -259,6 +259,7 @@ void MixedSort(T* arr1, T* arr2, int64_t size)
     SplitMergeMixedSort(arr2, arr1, 0, size);
 }
 
+#if __has_include(<benchmark/benchmark.h>)
 // =================================================================== BENCHMARKS ======================================================================//
 
 #pragma comment ( lib, "Shlwapi.lib" )
@@ -349,6 +350,7 @@ BENCHMARK(LibrarySort_BM)->RangeMultiplier(10)->Range(10, 10000000)->Iterations(
 
 BENCHMARK_MAIN();
 
+#else
 
 //InsertionSort_BM / 10 / iterations:1             4900 ns        0.000 ns            1
 //InsertionSort_BM / 100 / iterations : 1          9500 ns        0.000 ns            1
@@ -388,13 +390,19 @@ BENCHMARK_MAIN();
 //LibrarySort_BM / 1000000 / iterations : 1   122408000 ns    109375000 ns            1
 //LibrarySort_BM / 10000000 / iterations : 1 1180332700 ns   1187500000 ns            1
 
-//int main()
-//{
-//    Time t1[] = { {2000, 12, 24, 5, 56, 34}, {2005, 12, 24, 3, 56, 76}, {2000, 11, 24, 5, 56, 34}, {2001, 32, 43, 5, 56, 34}, {2000, 1, 4, 5, 56, 34} };
-//    Time t2[5];
-//    MixedSort(t1, t2, 5);
-//    for (int i = 0; i < 5; i++)
-//        std::cout << t2[i].year << ' ' << t2[i].month << ' ' << t2[i].day << ' ' << t2[i].hour << ' ' << t2[i].minute << ' ' << t2[i].second << std::endl;
-//
-//}
+int main()
+{
+    Time t1[] = { {2000, 12, 24, 5, 56, 34}, {2005, 12, 24, 3, 56, 76}, {2000, 11, 24, 5, 56, 34}, {2001, 32, 43, 5, 56, 34}, {2000, 1, 4, 5, 56, 34} };
+    Time t2[5];
 
+    //InsertionSort(t1, 5);
+    //QuickSort(t1, 0, 5);
+    MergeSort(t1, t2, 5);
+    // my
+    MixedSort(t1, t2, 5);
+    for (int i = 0; i < 5; i++)
+        std::cout << t2[i].year << ' ' << t2[i].month << ' ' << t2[i].day << ' ' << t2[i].hour << ' ' << t2[i].minute << ' ' << t2[i].second << std::endl;
+
+}
+
+#endif
