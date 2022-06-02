@@ -233,8 +233,10 @@ public:
     }
 };
 
+#if __has_include(<benchmark/benchmark.h>)
 #pragma comment ( lib, "Shlwapi.lib" )
 #include <benchmark/benchmark.h>                // https://github.com/google/benchmark
+#endif
 #include <random>
 #include <cstdlib>
 
@@ -286,6 +288,7 @@ void CreateList(int numOfMess)
     }
 }
 
+#if __has_include(<benchmark/benchmark.h>)
 static void BM_QuickSort(benchmark::State& state)
 {
     CreateList(state.range(0));
@@ -321,7 +324,7 @@ static void BM_RadixSort(benchmark::State& state)
 
 BENCHMARK(BM_RadixSort)->RangeMultiplier(10)->Range(1 << 1, 1000000)->Iterations(1);
 
-
+#elif
 
 //2022 - 04 - 19T00:55 : 05 + 03 : 00
 //Running D : \Univercity\1_kurs\OOP_Basic\Sort_lab3\Lab3_a\Release\Lab3_b.exe
@@ -334,7 +337,7 @@ BENCHMARK(BM_RadixSort)->RangeMultiplier(10)->Range(1 << 1, 1000000)->Iterations
 //------------------------------------------------------------------------------ -
 //Benchmark                                     Time             CPU   Iterations
 //------------------------------------------------------------------------------ -
-//BM_QuickSort / 2 / iterations:1                5000 ns        0.000 ns            1
+//BM_QuickSort / 2 / iterations:1                  5000 ns        0.000 ns            1
 //BM_QuickSort / 10 / iterations : 1               8300 ns        0.000 ns            1
 //BM_QuickSort / 100 / iterations : 1              8900 ns        0.000 ns            1
 //BM_QuickSort / 1000 / iterations : 1           159300 ns        0.000 ns            1
@@ -360,23 +363,29 @@ BENCHMARK(BM_RadixSort)->RangeMultiplier(10)->Range(1 << 1, 1000000)->Iterations
 
 
 
-//int main()
-//{
-//
-//    MessageList* list = new MessageList();
-//    list->append(getMessage());
-//    list->append(getMessage());
-//    list->append(getMessage());
-//    list->append(getMessage());
-//    list->append(getMessage());
-//    list->printAll();
-//
-//    SortingField* fields = new SortingField[2];
-//    fields[0] = ID; fields[1] = spamRating;
-//
-//    //list->qSortList(nullptr, nullptr, fields);
-//    //list->RadixSort();
-//    //list->CountingSort();
-//    list->printAll();
-//
-//}
+int main()
+{
+
+    MessageList* list = new MessageList();
+    list->append(getMessage());
+    list->append(getMessage());
+    list->append(getMessage());
+    list->append(getMessage());
+    list->append(getMessage());
+    list->printAll();
+
+    SortingField* fields = new SortingField[2];
+    fields[0] = ID; fields[1] = spamRating;
+
+    // 1 Task
+
+    list->qSortList(nullptr, nullptr, fields);
+
+    // 2 Task
+    //list->RadixSort();
+    //list->CountingSort();
+    list->printAll();
+
+}
+
+#endif
