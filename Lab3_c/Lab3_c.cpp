@@ -4,6 +4,7 @@
 // 10. Реалізувати алгоритм сортування heap sort
 
 
+
 template <typename T>
 void heapify(T arr[], int n, int i)
 {
