@@ -17,7 +17,6 @@
 #include <benchmark/benchmark.h>
 #include <random>
 
-
 void CreateArray(Time* t, int64_t size)
 {
     for (int64_t i = 0; i < size; i++)
