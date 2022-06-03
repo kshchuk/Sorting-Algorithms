@@ -153,7 +153,6 @@ int main()
     MixedSort(t1, t2, 5);
     for (int i = 0; i < 5; i++)
         std::cout << t2[i].year << ' ' << t2[i].month << ' ' << t2[i].day << ' ' << t2[i].hour << ' ' << t2[i].minute << ' ' << t2[i].second << std::endl;
-
 }
 
 #endif

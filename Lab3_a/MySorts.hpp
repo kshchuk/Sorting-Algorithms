@@ -26,6 +26,8 @@ void InsertionSort(T* arr, int64_t size)
 
 template<typename T> int64_t SortPartition(T*, int64_t, int64_t);
 
+template<typename T> T GetPivot(T* arr, int64_t start, int64_t end);
+
 template<typename T>
 void QuickSort(T* arr, int64_t start, int64_t end)
 {
@@ -39,9 +41,7 @@ void QuickSort(T* arr, int64_t start, int64_t end)
         return;
 }
 
-template<typename T>
-int64_t SortPartition(T* arr, int64_t start, int64_t end)
-{
+template<typename T> T GetPivot(T* arr, int64_t start, int64_t end) {
     // median-of-three pivot
     int64_t mid = (start + end) / 2;
     if (arr[mid] > arr[start])
@@ -50,7 +50,14 @@ int64_t SortPartition(T* arr, int64_t start, int64_t end)
         std::swap(arr[start], arr[end]);
     if (arr[mid] > arr[end])
         std::swap(arr[mid], arr[end]);
-    T pivot = arr[end];
+    return arr[end];
+}
+
+
+template<typename T>
+int64_t SortPartition(T* arr, int64_t start, int64_t end)
+{
+    T pivot = GetPivot(arr, start, end);
 
     int64_t left = start - 1;
     int64_t right = end + 1;
