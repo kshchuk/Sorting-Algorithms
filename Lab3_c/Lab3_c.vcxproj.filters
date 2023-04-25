@@ -18,9 +18,12 @@
     <ClCompile Include="Lab3_c.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Lab3_a\MySorts.hpp">
+    <ClInclude Include="..\Lab3_a\sorting_algorithms.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
