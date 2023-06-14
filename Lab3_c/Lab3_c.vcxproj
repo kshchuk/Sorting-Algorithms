@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="benchmarks.cpp" />
     <ClCompile Include="Lab3_c.cpp" />
     <ClCompile Include="tests.hpp" />
   </ItemGroup>
