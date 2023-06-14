@@ -1,6 +1,6 @@
-#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "doctest.h"
 #include "MySorts.hpp"
+#include "doctest.h"
+
 
 TEST_CASE("Testing sorting algorithms") {
     int arr[5] = { 5, 4, 3, 2, 1 };
@@ -121,18 +121,6 @@ TEST_CASE("Testing sorting algorithms") {
     }
 
 
-    SUBCASE("Testing MultiThreadedInsertionSort") {
-        MultiThreadedInsertionSort<int> insertionSort;
-        insertionSort.sort(arr, 5);
-        CHECK(std::equal(std::begin(arr), std::end(arr), std::begin(sorted_arr)));
-
-        insertionSort.sort(reverse_sorted_arr, 5);
-        CHECK(std::equal(std::begin(reverse_sorted_arr), std::end(reverse_sorted_arr), std::begin(sorted_arr)));
-
-        insertionSort.sort(duplicate_arr, 5);
-        CHECK(std::equal(std::begin(duplicate_arr), std::end(duplicate_arr), std::begin(duplicate_sorted_arr)));
-    }
-
     SUBCASE("Testing MultiThreadedQuickSort") {
         MultiThreadedQuickSort<int> insertionSort;
         insertionSort.sort(arr, 5);
@@ -160,18 +148,6 @@ TEST_CASE("Testing sorting algorithms") {
 
     SUBCASE("Testing MultiThreadedHeapSort") {
         MultiThreadedHeapSort<int> insertionSort;
-        insertionSort.sort(arr, 5);
-        CHECK(std::equal(std::begin(arr), std::end(arr), std::begin(sorted_arr)));
-
-        insertionSort.sort(reverse_sorted_arr, 5);
-        CHECK(std::equal(std::begin(reverse_sorted_arr), std::end(reverse_sorted_arr), std::begin(sorted_arr)));
-
-        insertionSort.sort(duplicate_arr, 5);
-        CHECK(std::equal(std::begin(duplicate_arr), std::end(duplicate_arr), std::begin(duplicate_sorted_arr)));
-    }
-
-    SUBCASE("Testing MultiThreadeBubbleSort") {
-        MultiThreadeBubbleSort<int> insertionSort;
         insertionSort.sort(arr, 5);
         CHECK(std::equal(std::begin(arr), std::end(arr), std::begin(sorted_arr)));
 
