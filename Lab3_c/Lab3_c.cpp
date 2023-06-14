@@ -1,9 +1,12 @@
-﻿
+﻿#include "MySorts.hpp"
+
+
 #define DOCTEST_CONFIG_IMPLEMENT
 
-#include "../Lab3_a/MySorts.hpp"
-#include "tests.hpp"
 #include "doctest.h"
+#include "tests.hpp"
+
+
 
 int main(int argc, char* argv[])
 {

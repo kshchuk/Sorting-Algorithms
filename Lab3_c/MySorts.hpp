@@ -38,7 +38,7 @@ public:
         for (int64_t j = 1; j < size; j++) {
             t = arr[j];
             i = j - 1;
-            while ((i >= 0) && (arr[i] < t)) {
+            while ((i >= 0) && (arr[i] > t)) {
                 arr[i + 1] = arr[i];
                 i--;
             }
@@ -307,41 +307,7 @@ public:
 
 /*------------------------------------------------------------MULTITHREADING-------------------------------------------------------------------------------*/
 
-/**
- * @class MultiThreadedInsertionSort
- * @brief Class for multithreaded insertion sort strategy.
- */
-template <typename T>
-class MultiThreadedInsertionSort : public SortStrategy<T> {
-    std::mutex mtx;
-public:
-    /**
-     * @brief Sorts the array using multithreaded insertion sort.
-     * @param arr The array to be sorted.
-     * @param size The size of the array.
-     */
-    void sort(T* arr, int size) override {
-        T t;
-        int64_t i;
-        std::vector<std::thread> threads;
-        for (int64_t j = 1; j < size; j++) {
-            threads.push_back(std::thread([&, j] {
-                t = arr[j];
-                i = j - 1;
-                mtx.lock();
-                while ((i >= 0) && (arr[i] < t)) {
-                    arr[i + 1] = arr[i];
-                    i--;
-                }
-                arr[i + 1] = t;
-                mtx.unlock();
-                }));
-        }
-        for (auto& th : threads) {
-            th.join();
-        }
-    }
-};
+
 
 /**
  * @class MultiThreadedQuickSort
@@ -491,46 +457,6 @@ private:
             heapify(arr, n, largest);
         }
     }
-};
-
-
-/**
- * @class MultiThreadeBubbleSort
- * @brief Class for bubble sort strategy.
- */
-template <typename T>
-class MultiThreadeBubbleSort : public SortStrategy<T> {
-public:
-    /**
-     * @brief Sorts the array using bubble sort in a multithreaded manner.
-     * @param arr The array to be sorted.
-     * @param size The size of the array.
-     */
-    void sort(T* arr, int size) override {
-        std::vector<std::thread> threads;
-        for (int i = 0; i < size - 1; i++) {
-            threads.push_back(std::thread(&MultiThreadeBubbleSort::bubbleSortPass, this, arr, size, i));
-        }
-        for (auto& th : threads) th.join();
-    }
-
-private:
-    /**
-     * @brief Performs a single pass of bubble sort.
-     * @param arr The array to be sorted.
-     * @param size The size of the array.
-     * @param i The index of the pass.
-     */
-    void bubbleSortPass(T* arr, int size, int i) {
-        for (int j = 0; j < size - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                std::lock_guard<std::mutex> lock(mtx);
-                std::swap(arr[j], arr[j + 1]);
-            }
-        }
-    }
-
-    std::mutex mtx;
 };
 
 
