@@ -23,7 +23,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Lab3_a\MySorts.hpp">
+    <ClInclude Include="sorting_algorithms.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="doctest.h">
