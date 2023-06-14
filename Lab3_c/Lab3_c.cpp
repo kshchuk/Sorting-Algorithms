@@ -1,4 +1,4 @@
-﻿
+﻿/*
 // 10. Реалізувати алгоритм сортування heap sort
 
 #include <iostream>
@@ -350,11 +350,25 @@ BENCHMARK_MAIN();
 //LibrarySort_BM / 1000000 / iterations : 1         70601 us        62500 us            1
 //LibrarySort_BM / 10000000 / iterations : 1       816895 us       828125 us            1
 
+*/
 
+#include "../Lab3_a/MySorts.hpp"
 
 int main()
 {
-    std::cout << "Heap sort\n";
+    int arr[] = { 5, 2, 4, 6, 1, 3 };
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    SortContext<int> context(new InsertionSort<int>());
+    context.sort(arr, size);
+
+    // Switch to another sorting strategy...
+    // context.set_strategy(new QuickSort<int>());
+    // context.sort(arr, size);
+
+    return 0;
+
+    /*std::cout << "Heap sort\n";
 
     int* arr = randomArr(10);
     heapSort(arr, 10);
@@ -386,8 +400,7 @@ int main()
     for (int i = 0; i < 10; i++)
         std::cout << arr[i] << '\n';
 
-    std::cout << "\n\n";
+    std::cout << "\n\n";*/
 }
 
-#endif
 
