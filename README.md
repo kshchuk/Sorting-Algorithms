@@ -39,16 +39,9 @@ Sorting-Algorithms/
 │   ├── array_bench/     # Time-array benchmarks (Insertion, Quick, Merge, etc.)
 │   ├── list_bench/      # MessageList benchmarks (qSortList, CountingSort, RadixSort)
 │   └── strategy_bench/   # doctest + strategy-based benchmarks
-└── Sorting-Algorithms.sln
 ```
 
 ## Build
-
-### Visual Studio
-
-Open `Sorting-Algorithms.sln` at the repo root and build the solution. Ensure include paths point to `include/` and `common/` (the provided `.vcxproj` files set them relative to each app).
-
-### CMake (optional, macOS/Linux)
 
 From the repo root:
 
