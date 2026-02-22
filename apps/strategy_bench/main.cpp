@@ -1,16 +1,29 @@
 #include "sorting/array/all_array_sorts.hpp"
 #include <gtest/gtest.h>
 #include <benchmark/benchmark.h>
+#include <cstring>
 
 #include "tests.hpp"
 #include "benchmarks.hpp"
 
 int main(int argc, char* argv[])
 {
+    bool run_benchmarks = false;
+    for (int i = 1; i < argc; ++i) {
+        if (std::strcmp(argv[i], "--run_benchmarks") == 0) {
+            run_benchmarks = true;
+            break;
+        }
+    }
+
     testing::InitGoogleTest(&argc, argv);
     int ret = RUN_ALL_TESTS();
     if (ret != 0) {
         return ret;
+    }
+
+    if (!run_benchmarks) {
+        return 0;
     }
 
     REGISTER_BENCHMARK(int, sorting::InsertionSort);
@@ -28,4 +41,5 @@ int main(int argc, char* argv[])
 
     benchmark::Initialize(&argc, argv);
     benchmark::RunSpecifiedBenchmarks();
+    return 0;
 }

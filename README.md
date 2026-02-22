@@ -56,7 +56,7 @@ Binaries will be in `build/apps/array_bench`, `build/apps/list_bench`, `build/ap
 
 - **array_bench**: Run the executable; with Google Benchmark present it runs time-array benchmarks. Pass benchmark args as needed (e.g. `--benchmark_filter=Insertion`).
 - **list_bench**: Same; benchmarks MessageList sorts. Without benchmark, interactive message list + qSort.
-- **strategy_bench**: Run tests (Google Test) then strategy benchmarks. Use GTest options (e.g. `--gtest_list_tests`, `--gtest_filter='SortingAlgorithms.*'`) and/or benchmark options as desired.
+- **strategy_bench**: By default runs only unit tests (Google Test). Add `--run_benchmarks` to run strategy benchmarks after tests. Use GTest options (e.g. `--gtest_list_tests`, `--gtest_filter='SortingAlgorithms.*'`) and, when using `--run_benchmarks`, benchmark options as desired.
 
 ## Algorithm overview
 
