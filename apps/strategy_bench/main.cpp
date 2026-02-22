@@ -1,7 +1,5 @@
 #include "sorting/array/all_array_sorts.hpp"
-
-#define DOCTEST_CONFIG_IMPLEMENT
-#include "doctest.h"
+#include <gtest/gtest.h>
 #include <benchmark/benchmark.h>
 
 #include "tests.hpp"
@@ -9,14 +7,10 @@
 
 int main(int argc, char* argv[])
 {
-    doctest::Context context;
-
-    context.applyCommandLine(argc, argv);
-
-    int res = context.run();
-
-    if (context.shouldExit()) {
-        return res;
+    testing::InitGoogleTest(&argc, argv);
+    int ret = RUN_ALL_TESTS();
+    if (ret != 0) {
+        return ret;
     }
 
     REGISTER_BENCHMARK(int, sorting::InsertionSort);

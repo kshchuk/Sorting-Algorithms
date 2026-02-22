@@ -33,6 +33,16 @@ if(benchmark_FOUND)
   target_link_libraries(list_bench PRIVATE benchmark::benchmark)
 endif()
 
+# Google Test (for strategy_bench)
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  GIT_REPOSITORY https://github.com/google/googletest.git
+  GIT_TAG v1.14.0
+)
+set(GTEST_USE_OWN_CMAKE_BUILD_DIR OFF CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+
 # strategy_bench
 set(STRATEGY_BENCH_SOURCES
   apps/strategy_bench/main.cpp
@@ -43,6 +53,7 @@ target_include_directories(strategy_bench PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/apps/strategy_bench
   ${INCLUDE_DIR}
 )
+target_link_libraries(strategy_bench PRIVATE GTest::gtest)
 find_package(benchmark QUIET)
 if(benchmark_FOUND)
   target_link_libraries(strategy_bench PRIVATE benchmark::benchmark)
