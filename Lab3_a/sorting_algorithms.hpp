@@ -314,8 +314,8 @@ void SortingAlgorithms<T>::MergeSortAuxMT(T* arr, T* temp, int size, int cur_dep
     }
     int left = size / 2;
     if (cur_depth <= max_depth) {
-        std::thread t(mergeSortAuxMT<T>, arr, temp, left, cur_depth + 1, max_depth);
-        std::thread t1(mergeSortAuxMT<T>, (arr + left), temp + left, (size - left), cur_depth + 1, max_depth);
+        std::thread t(MergeSortAuxMT<T>, arr, temp, left, cur_depth + 1, max_depth);
+        std::thread t1(MergeSortAuxMT<T>, (arr + left), temp + left, (size - left), cur_depth + 1, max_depth);
         //wait for threads to finish
         t.join();
         t1.join();
@@ -342,8 +342,8 @@ void SortingAlgorithms<T>::Merge(T a[], int sizeA, T b[], int sizeB, T c[]) {
         }
         ic++;
     }
-    fillTheRest(c, ic, a, ia, sizeA);
-    fillTheRest(c, ic, b, ib, sizeB);
+    FillTheRest(c, ic, a, ia, sizeA);
+    FillTheRest(c, ic, b, ib, sizeB);
 }
 
 
