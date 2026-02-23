@@ -13,23 +13,25 @@ public:
     }
 
 private:
+    static constexpr int kMinSizeForThreads = 5000;
+
     void mergeSort(T* arr, int left, int right) {
-        if (left < right) {
-            int mid = left + (right - left) / 2;
+        if (left >= right) return;
+        int size = right - left + 1;
+        int mid = left + (right - left) / 2;
 
-            std::thread left_sort([=] { mergeSort(arr, left, mid); });
-
-            if (right - left > 10000) {
-                std::thread right_sort([=] { mergeSort(arr, mid + 1, right); });
-                right_sort.join();
-            } else {
-                mergeSort(arr, mid + 1, right);
-            }
-
-            left_sort.join();
-
+        if (size <= kMinSizeForThreads) {
+            mergeSort(arr, left, mid);
+            mergeSort(arr, mid + 1, right);
             merge(arr, left, mid, right);
+            return;
         }
+
+        std::thread left_sort([=] { mergeSort(arr, left, mid); });
+        std::thread right_sort([=] { mergeSort(arr, mid + 1, right); });
+        left_sort.join();
+        right_sort.join();
+        merge(arr, left, mid, right);
     }
 
     void merge(T* arr, int left, int mid, int right) {
