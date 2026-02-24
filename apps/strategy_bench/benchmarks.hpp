@@ -3,6 +3,7 @@
 #include "data_generators.hpp"
 #include <benchmark/benchmark.h>
 #include <chrono>
+#include <memory>
 #include <vector>
 
 constexpr std::chrono::seconds kBenchmarkTimeout{300};  // 5 min
@@ -20,18 +21,22 @@ void runBenchmarkWithGenerator(benchmark::State& state, sorting::SortStrategy<T>
     }
 }
 
+/** Розміри масивів для бенчмарку (як у експерименті, макс 100000). */
+constexpr int kBenchmarkSizes[] = { 10000, 20000, 50000, 100000 };
+
 #define REGISTER_BENCHMARK(T, STRATEGY) \
     benchmark::RegisterBenchmark((std::string("BM_Sort/") + #STRATEGY + "/Uniform").c_str(), \
-    [strategy = new STRATEGY<T>()](benchmark::State& state) { \
-        runBenchmarkWithGenerator(state, strategy, bench_data::generateUniformInt); \
-        delete strategy; \
+    [](benchmark::State& state) { \
+        auto strategy = std::make_unique<STRATEGY<T>>(); \
+        runBenchmarkWithGenerator(state, strategy.get(), bench_data::generateUniformInt); \
     })->Apply([](benchmark::internal::Benchmark* b) { \
-        for (int i = 10; i <= 1000000; i *= 10) b->Arg(i); \
+        for (int n : kBenchmarkSizes) b->Arg(n); \
     })->Unit(benchmark::kMillisecond)->UseRealTime()->Complexity(benchmark::oAuto)
 
 #define REGISTER_BENCHMARK_DIST(T, STRATEGY, DistName, GenFunc) \
     benchmark::RegisterBenchmark((std::string("BM_Sort/") + #STRATEGY + "/" + DistName).c_str(), \
-    [strategy = new STRATEGY<T>()](benchmark::State& state) { \
+    [](benchmark::State& state) { \
+        auto strategy = std::make_unique<STRATEGY<T>>(); \
         auto deadline = std::chrono::steady_clock::now() + kBenchmarkTimeout; \
         for (auto _ : state) { \
             if (std::chrono::steady_clock::now() > deadline) break; \
@@ -41,13 +46,13 @@ void runBenchmarkWithGenerator(benchmark::State& state, sorting::SortStrategy<T>
             state.SetComplexityN(state.range(0)); \
             strategy->sort(arr.data(), static_cast<int>(arr.size())); \
         } \
-        delete strategy; \
     })->Apply([](benchmark::internal::Benchmark* b) { \
-        for (int i = 10; i <= 1000000; i *= 10) b->Arg(i); \
+        for (int n : kBenchmarkSizes) b->Arg(n); \
     })->Unit(benchmark::kMillisecond)->UseRealTime()->Complexity(benchmark::oAuto)
 
-/** Реєструє бенчмарки для трьох розподілів: Uniform, Normal, AsymptoticReverse */
+/** Реєструє бенчмарки для чотирьох розподілів як у run_experiment: Worst, Uniform, Normal, Best */
 #define REGISTER_BENCHMARK_ALL_DISTS(T, STRATEGY) \
+    REGISTER_BENCHMARK_DIST(T, STRATEGY, "Worst", bench_data::generateAsymptoticReverseSortedInt); \
     REGISTER_BENCHMARK_DIST(T, STRATEGY, "Uniform", bench_data::generateUniformInt); \
     REGISTER_BENCHMARK_DIST(T, STRATEGY, "Normal", bench_data::generateNormalInt); \
-    REGISTER_BENCHMARK_DIST(T, STRATEGY, "AsymptoticReverse", bench_data::generateAsymptoticReverseSortedInt)
+    REGISTER_BENCHMARK_DIST(T, STRATEGY, "Best", bench_data::generateAsymptoticSortedInt)

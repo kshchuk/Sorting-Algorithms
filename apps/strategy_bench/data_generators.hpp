@@ -94,6 +94,10 @@ inline std::vector<int> generateAsymptoticReverseSortedInt(int n) {
     return generateAsymptoticReverseSorted<int>(n);
 }
 
+inline std::vector<int> generateAsymptoticSortedInt(int n) {
+    return generateAsymptoticSorted<int>(n);
+}
+
 // --- Instrumented (Counted) types for experiment: wrap raw vectors ---
 
 template <typename T>

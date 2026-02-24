@@ -4,11 +4,6 @@ C++ implementations of sorting algorithms with benchmarks and tests.
 
 ## Report (Lab 1, OS)
 
-The LaTeX report is in **`report/`**:
-
-- **`report/report.tex`** — source (author: Kishchuk Yaroslav Yaroslavovych).
-- **`report/report.pdf`** — built PDF (build with: `cd report && pdflatex report.tex`).
-
 Report structure:
 
 1. **Goal** — implement and experimentally compare sorting algorithms by time, comparisons, and extra memory.

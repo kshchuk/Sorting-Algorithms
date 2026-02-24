@@ -1,0 +1,339 @@
+BM_Sort/sorting::InsertionSort/Worst/10000/real_time                       13.1 ms         13.1 ms           53
+BM_Sort/sorting::InsertionSort/Worst/20000/real_time                       53.0 ms         52.6 ms           13
+BM_Sort/sorting::InsertionSort/Worst/50000/real_time                        357 ms          341 ms            2
+BM_Sort/sorting::InsertionSort/Worst/100000/real_time                      1337 ms         1333 ms            1
+BM_Sort/sorting::InsertionSort/Worst/real_time_BigO                        0.13 N^2        0.13 N^2  
+BM_Sort/sorting::InsertionSort/Worst/real_time_RMS                            3 %             1 %    
+BM_Sort/sorting::InsertionSort/Uniform/10000/real_time                     6.68 ms         6.67 ms          104
+BM_Sort/sorting::InsertionSort/Uniform/20000/real_time                     26.4 ms         26.4 ms           26
+BM_Sort/sorting::InsertionSort/Uniform/50000/real_time                      164 ms          164 ms            4
+BM_Sort/sorting::InsertionSort/Uniform/100000/real_time                     656 ms          655 ms            1
+BM_Sort/sorting::InsertionSort/Uniform/real_time_BigO                      0.07 N^2        0.07 N^2  
+BM_Sort/sorting::InsertionSort/Uniform/real_time_RMS                          0 %             0 %    
+BM_Sort/sorting::InsertionSort/Normal/10000/real_time                      6.59 ms         6.58 ms          105
+BM_Sort/sorting::InsertionSort/Normal/20000/real_time                      26.1 ms         26.1 ms           27
+BM_Sort/sorting::InsertionSort/Normal/50000/real_time                       163 ms          163 ms            4
+BM_Sort/sorting::InsertionSort/Normal/100000/real_time                      653 ms          650 ms            1
+BM_Sort/sorting::InsertionSort/Normal/real_time_BigO                       0.07 N^2        0.07 N^2  
+BM_Sort/sorting::InsertionSort/Normal/real_time_RMS                           0 %             0 %    
+BM_Sort/sorting::InsertionSort/Best/10000/real_time                       0.005 ms        0.005 ms       159093
+BM_Sort/sorting::InsertionSort/Best/20000/real_time                       0.008 ms        0.008 ms        85900
+BM_Sort/sorting::InsertionSort/Best/50000/real_time                       0.020 ms        0.019 ms        36829
+BM_Sort/sorting::InsertionSort/Best/100000/real_time                      0.037 ms        0.037 ms        18418
+BM_Sort/sorting::InsertionSort/Best/real_time_BigO                         0.38 N          0.37 N    
+BM_Sort/sorting::InsertionSort/Best/real_time_RMS                             5 %             3 %    
+BM_Sort/sorting::QuickSort/Worst/10000/real_time                          0.118 ms        0.118 ms         5945
+BM_Sort/sorting::QuickSort/Worst/20000/real_time                          0.257 ms        0.257 ms         2722
+BM_Sort/sorting::QuickSort/Worst/50000/real_time                          0.689 ms        0.689 ms         1007
+BM_Sort/sorting::QuickSort/Worst/100000/real_time                          1.49 ms         1.49 ms          468
+BM_Sort/sorting::QuickSort/Worst/real_time_BigO                            0.89 NlgN       0.89 NlgN 
+BM_Sort/sorting::QuickSort/Worst/real_time_RMS                                1 %             1 %    
+BM_Sort/sorting::QuickSort/Uniform/10000/real_time                        0.376 ms        0.376 ms         1862
+BM_Sort/sorting::QuickSort/Uniform/20000/real_time                        0.802 ms        0.801 ms          870
+BM_Sort/sorting::QuickSort/Uniform/50000/real_time                         2.17 ms         2.17 ms          322
+BM_Sort/sorting::QuickSort/Uniform/100000/real_time                        4.60 ms         4.60 ms          144
+BM_Sort/sorting::QuickSort/Uniform/real_time_BigO                          2.77 NlgN       2.77 NlgN 
+BM_Sort/sorting::QuickSort/Uniform/real_time_RMS                              0 %             0 %    
+BM_Sort/sorting::QuickSort/Normal/10000/real_time                         0.593 ms        0.428 ms         1901
+BM_Sort/sorting::QuickSort/Normal/20000/real_time                          1.38 ms        0.933 ms          513
+BM_Sort/sorting::QuickSort/Normal/50000/real_time                          2.13 ms         2.13 ms          279
+BM_Sort/sorting::QuickSort/Normal/100000/real_time                         4.50 ms         4.50 ms          155
+BM_Sort/sorting::QuickSort/Normal/real_time_BigO                          45.40 N         44.58 N    
+BM_Sort/sorting::QuickSort/Normal/real_time_RMS                              12 %             3 %    
+BM_Sort/sorting::QuickSort/Best/10000/real_time                           0.053 ms        0.052 ms        13064
+BM_Sort/sorting::QuickSort/Best/20000/real_time                           0.109 ms        0.109 ms         6349
+BM_Sort/sorting::QuickSort/Best/50000/real_time                           0.307 ms        0.307 ms         2261
+BM_Sort/sorting::QuickSort/Best/100000/real_time                          0.639 ms        0.639 ms         1090
+BM_Sort/sorting::QuickSort/Best/real_time_BigO                             0.39 NlgN       0.39 NlgN 
+BM_Sort/sorting::QuickSort/Best/real_time_RMS                                 1 %             1 %    
+BM_Sort/sorting::MergeSort/Worst/10000/real_time                          0.495 ms        0.495 ms         1335
+BM_Sort/sorting::MergeSort/Worst/20000/real_time                           1.01 ms         1.01 ms          693
+BM_Sort/sorting::MergeSort/Worst/50000/real_time                           2.49 ms         2.49 ms          279
+BM_Sort/sorting::MergeSort/Worst/100000/real_time                          5.02 ms         5.02 ms          136
+BM_Sort/sorting::MergeSort/Worst/real_time_BigO                           50.15 N         50.13 N    
+BM_Sort/sorting::MergeSort/Worst/real_time_RMS                                0 %             0 %    
+BM_Sort/sorting::MergeSort/Uniform/10000/real_time                        0.673 ms        0.673 ms         1033
+BM_Sort/sorting::MergeSort/Uniform/20000/real_time                         1.39 ms         1.39 ms          504
+BM_Sort/sorting::MergeSort/Uniform/50000/real_time                         3.59 ms         3.59 ms          194
+BM_Sort/sorting::MergeSort/Uniform/100000/real_time                        7.39 ms         7.39 ms           94
+BM_Sort/sorting::MergeSort/Uniform/real_time_BigO                         73.32 N         73.31 N    
+BM_Sort/sorting::MergeSort/Uniform/real_time_RMS                              2 %             2 %    
+BM_Sort/sorting::MergeSort/Normal/10000/real_time                         0.675 ms        0.675 ms         1034
+BM_Sort/sorting::MergeSort/Normal/20000/real_time                          1.41 ms         1.40 ms          503
+BM_Sort/sorting::MergeSort/Normal/50000/real_time                          3.85 ms         3.80 ms          180
+BM_Sort/sorting::MergeSort/Normal/100000/real_time                         7.69 ms         7.68 ms           90
+BM_Sort/sorting::MergeSort/Normal/real_time_BigO                          76.64 N         76.38 N    
+BM_Sort/sorting::MergeSort/Normal/real_time_RMS                               2 %             2 %    
+BM_Sort/sorting::MergeSort/Best/10000/real_time                           0.513 ms        0.506 ms         1000
+BM_Sort/sorting::MergeSort/Best/20000/real_time                            1.00 ms        0.998 ms          689
+BM_Sort/sorting::MergeSort/Best/50000/real_time                            2.49 ms         2.48 ms          275
+BM_Sort/sorting::MergeSort/Best/100000/real_time                           4.99 ms         4.98 ms          138
+BM_Sort/sorting::MergeSort/Best/real_time_BigO                            49.86 N         49.80 N    
+BM_Sort/sorting::MergeSort/Best/real_time_RMS                                 0 %             0 %    
+BM_Sort/sorting::HeapSort/Worst/10000/real_time                           0.388 ms        0.387 ms         1798
+BM_Sort/sorting::HeapSort/Worst/20000/real_time                           0.869 ms        0.869 ms          800
+BM_Sort/sorting::HeapSort/Worst/50000/real_time                            2.43 ms         2.43 ms          288
+BM_Sort/sorting::HeapSort/Worst/100000/real_time                           5.35 ms         5.35 ms          130
+BM_Sort/sorting::HeapSort/Worst/real_time_BigO                             3.20 NlgN       3.20 NlgN 
+BM_Sort/sorting::HeapSort/Worst/real_time_RMS                                 2 %             2 %    
+BM_Sort/sorting::HeapSort/Uniform/10000/real_time                         0.446 ms        0.446 ms         1564
+BM_Sort/sorting::HeapSort/Uniform/20000/real_time                         0.998 ms        0.997 ms          701
+BM_Sort/sorting::HeapSort/Uniform/50000/real_time                          2.78 ms         2.78 ms          252
+BM_Sort/sorting::HeapSort/Uniform/100000/real_time                         6.46 ms         6.41 ms          112
+BM_Sort/sorting::HeapSort/Uniform/real_time_BigO                           3.82 NlgN       3.80 NlgN 
+BM_Sort/sorting::HeapSort/Uniform/real_time_RMS                               5 %             4 %    
+BM_Sort/sorting::HeapSort/Normal/10000/real_time                          0.459 ms        0.459 ms         1498
+BM_Sort/sorting::HeapSort/Normal/20000/real_time                           1.01 ms         1.01 ms          686
+BM_Sort/sorting::HeapSort/Normal/50000/real_time                           2.83 ms         2.82 ms          247
+BM_Sort/sorting::HeapSort/Normal/100000/real_time                          6.33 ms         6.32 ms          111
+BM_Sort/sorting::HeapSort/Normal/real_time_BigO                            3.77 NlgN       3.77 NlgN 
+BM_Sort/sorting::HeapSort/Normal/real_time_RMS                                3 %             3 %    
+BM_Sort/sorting::HeapSort/Best/10000/real_time                            0.425 ms        0.425 ms         1642
+BM_Sort/sorting::HeapSort/Best/20000/real_time                            0.919 ms        0.919 ms          760
+BM_Sort/sorting::HeapSort/Best/50000/real_time                             2.56 ms         2.56 ms          272
+BM_Sort/sorting::HeapSort/Best/100000/real_time                            5.47 ms         5.47 ms          127
+BM_Sort/sorting::HeapSort/Best/real_time_BigO                              3.29 NlgN       3.29 NlgN 
+BM_Sort/sorting::HeapSort/Best/real_time_RMS                                  1 %             1 %    
+BM_Sort/sorting::BubbleSort/Worst/10000/real_time                          13.0 ms         13.0 ms           54
+BM_Sort/sorting::BubbleSort/Worst/20000/real_time                          52.0 ms         52.0 ms           13
+BM_Sort/sorting::BubbleSort/Worst/50000/real_time                           324 ms          324 ms            2
+BM_Sort/sorting::BubbleSort/Worst/100000/real_time                         1292 ms         1292 ms            1
+BM_Sort/sorting::BubbleSort/Worst/real_time_BigO                           0.13 N^2        0.13 N^2  
+BM_Sort/sorting::BubbleSort/Worst/real_time_RMS                               0 %             0 %    
+BM_Sort/sorting::BubbleSort/Uniform/10000/real_time                        25.5 ms         25.5 ms           27
+BM_Sort/sorting::BubbleSort/Uniform/20000/real_time                         103 ms          103 ms            7
+BM_Sort/sorting::BubbleSort/Uniform/50000/real_time                         676 ms          676 ms            1
+BM_Sort/sorting::BubbleSort/Uniform/100000/real_time                       4120 ms         4114 ms            1
+BM_Sort/sorting::BubbleSort/Uniform/real_time_BigO                         0.00 N^3        0.00 N^3  
+BM_Sort/sorting::BubbleSort/Uniform/real_time_RMS                             7 %             7 %    
+BM_Sort/sorting::BubbleSort/Normal/10000/real_time                         25.4 ms         25.3 ms           28
+BM_Sort/sorting::BubbleSort/Normal/20000/real_time                          103 ms          103 ms            7
+BM_Sort/sorting::BubbleSort/Normal/50000/real_time                          685 ms          684 ms            1
+BM_Sort/sorting::BubbleSort/Normal/100000/real_time                        4107 ms         4106 ms            1
+BM_Sort/sorting::BubbleSort/Normal/real_time_BigO                          0.00 N^3        0.00 N^3  
+BM_Sort/sorting::BubbleSort/Normal/real_time_RMS                              8 %             8 %    
+BM_Sort/sorting::BubbleSort/Best/10000/real_time                           12.9 ms         12.9 ms           54
+BM_Sort/sorting::BubbleSort/Best/20000/real_time                           51.4 ms         51.4 ms           14
+BM_Sort/sorting::BubbleSort/Best/50000/real_time                            321 ms          321 ms            2
+BM_Sort/sorting::BubbleSort/Best/100000/real_time                          1282 ms         1281 ms            1
+BM_Sort/sorting::BubbleSort/Best/real_time_BigO                            0.13 N^2        0.13 N^2  
+BM_Sort/sorting::BubbleSort/Best/real_time_RMS                                0 %             0 %    
+BM_Sort/sorting::SelectionSort/Worst/10000/real_time                       86.7 ms         86.6 ms            8
+BM_Sort/sorting::SelectionSort/Worst/20000/real_time                        335 ms          335 ms            2
+BM_Sort/sorting::SelectionSort/Worst/50000/real_time                       1889 ms         1888 ms            1
+BM_Sort/sorting::SelectionSort/Worst/100000/real_time                      6673 ms         6672 ms            1
+BM_Sort/sorting::SelectionSort/Worst/real_time_BigO                        0.67 N^2        0.67 N^2  
+BM_Sort/sorting::SelectionSort/Worst/real_time_RMS                            5 %             5 %    
+BM_Sort/sorting::SelectionSort/Uniform/10000/real_time                     84.8 ms         84.8 ms            8
+BM_Sort/sorting::SelectionSort/Uniform/20000/real_time                      328 ms          327 ms            2
+BM_Sort/sorting::SelectionSort/Uniform/50000/real_time                     1864 ms         1832 ms            1
+BM_Sort/sorting::SelectionSort/Uniform/100000/real_time                    6367 ms         6302 ms            1
+BM_Sort/sorting::SelectionSort/Uniform/real_time_BigO                      0.64 N^2        0.64 N^2  
+BM_Sort/sorting::SelectionSort/Uniform/real_time_RMS                          6 %             6 %    
+BM_Sort/sorting::SelectionSort/Normal/10000/real_time                      87.0 ms         86.9 ms            8
+BM_Sort/sorting::SelectionSort/Normal/20000/real_time                       330 ms          330 ms            2
+BM_Sort/sorting::SelectionSort/Normal/50000/real_time                      2146 ms         1872 ms            1
+BM_Sort/sorting::SelectionSort/Normal/100000/real_time                     6240 ms         6218 ms            1
+BM_Sort/sorting::SelectionSort/Normal/real_time_BigO                       0.64 N^2        0.63 N^2  
+BM_Sort/sorting::SelectionSort/Normal/real_time_RMS                          13 %             7 %    
+BM_Sort/sorting::SelectionSort/Best/10000/real_time                        87.5 ms         87.5 ms            8
+BM_Sort/sorting::SelectionSort/Best/20000/real_time                         330 ms          330 ms            2
+BM_Sort/sorting::SelectionSort/Best/50000/real_time                        1747 ms         1746 ms            1
+BM_Sort/sorting::SelectionSort/Best/100000/real_time                       6034 ms         6030 ms            1
+BM_Sort/sorting::SelectionSort/Best/real_time_BigO                         0.61 N^2        0.61 N^2  
+BM_Sort/sorting::SelectionSort/Best/real_time_RMS                             6 %             6 %    
+BM_Sort/sorting::ShellSort/Worst/10000/real_time                          0.104 ms        0.104 ms         6638
+BM_Sort/sorting::ShellSort/Worst/20000/real_time                          0.222 ms        0.222 ms         3140
+BM_Sort/sorting::ShellSort/Worst/50000/real_time                          0.600 ms        0.600 ms         1162
+BM_Sort/sorting::ShellSort/Worst/100000/real_time                          1.28 ms         1.27 ms          546
+BM_Sort/sorting::ShellSort/Worst/real_time_BigO                            0.77 NlgN       0.77 NlgN 
+BM_Sort/sorting::ShellSort/Worst/real_time_RMS                                0 %             0 %    
+BM_Sort/sorting::ShellSort/Uniform/10000/real_time                        0.574 ms        0.573 ms         1218
+BM_Sort/sorting::ShellSort/Uniform/20000/real_time                         1.25 ms         1.25 ms          560
+BM_Sort/sorting::ShellSort/Uniform/50000/real_time                         3.44 ms         3.44 ms          203
+BM_Sort/sorting::ShellSort/Uniform/100000/real_time                        7.47 ms         7.47 ms           93
+BM_Sort/sorting::ShellSort/Uniform/real_time_BigO                          4.48 NlgN       4.48 NlgN 
+BM_Sort/sorting::ShellSort/Uniform/real_time_RMS                              1 %             1 %    
+BM_Sort/sorting::ShellSort/Normal/10000/real_time                         0.564 ms        0.564 ms         1238
+BM_Sort/sorting::ShellSort/Normal/20000/real_time                          1.23 ms         1.23 ms          567
+BM_Sort/sorting::ShellSort/Normal/50000/real_time                          3.42 ms         3.42 ms          204
+BM_Sort/sorting::ShellSort/Normal/100000/real_time                         7.44 ms         7.44 ms           94
+BM_Sort/sorting::ShellSort/Normal/real_time_BigO                           4.46 NlgN       4.46 NlgN 
+BM_Sort/sorting::ShellSort/Normal/real_time_RMS                               1 %             1 %    
+BM_Sort/sorting::ShellSort/Best/10000/real_time                           0.063 ms        0.063 ms        11052
+BM_Sort/sorting::ShellSort/Best/20000/real_time                           0.136 ms        0.136 ms         5150
+BM_Sort/sorting::ShellSort/Best/50000/real_time                           0.368 ms        0.367 ms         1868
+BM_Sort/sorting::ShellSort/Best/100000/real_time                          0.778 ms        0.777 ms          897
+BM_Sort/sorting::ShellSort/Best/real_time_BigO                             0.47 NlgN       0.47 NlgN 
+BM_Sort/sorting::ShellSort/Best/real_time_RMS                                 1 %             0 %    
+BM_Sort/sorting::RadixSort/Worst/10000/real_time                          0.064 ms        0.064 ms        10903
+BM_Sort/sorting::RadixSort/Worst/20000/real_time                          0.177 ms        0.177 ms         3969
+BM_Sort/sorting::RadixSort/Worst/50000/real_time                          0.384 ms        0.384 ms         1824
+BM_Sort/sorting::RadixSort/Worst/100000/real_time                         0.751 ms        0.751 ms          927
+BM_Sort/sorting::RadixSort/Worst/real_time_BigO                            7.58 N          7.57 N    
+BM_Sort/sorting::RadixSort/Worst/real_time_RMS                                4 %             4 %    
+BM_Sort/sorting::RadixSort/Uniform/10000/real_time                        0.095 ms        0.095 ms         7396
+BM_Sort/sorting::RadixSort/Uniform/20000/real_time                        0.167 ms        0.167 ms         3017
+BM_Sort/sorting::RadixSort/Uniform/50000/real_time                        0.467 ms        0.466 ms         1505
+BM_Sort/sorting::RadixSort/Uniform/100000/real_time                        1.09 ms         1.09 ms          643
+BM_Sort/sorting::RadixSort/Uniform/real_time_BigO                          0.64 NlgN       0.64 NlgN 
+BM_Sort/sorting::RadixSort/Uniform/real_time_RMS                              5 %             5 %    
+BM_Sort/sorting::RadixSort/Normal/10000/real_time                         0.101 ms        0.101 ms         6900
+BM_Sort/sorting::RadixSort/Normal/20000/real_time                         0.203 ms        0.203 ms         3457
+BM_Sort/sorting::RadixSort/Normal/50000/real_time                         0.427 ms        0.427 ms         1639
+BM_Sort/sorting::RadixSort/Normal/100000/real_time                         1.14 ms         1.14 ms          607
+BM_Sort/sorting::RadixSort/Normal/real_time_BigO                           0.66 NlgN       0.66 NlgN 
+BM_Sort/sorting::RadixSort/Normal/real_time_RMS                              11 %            11 %    
+BM_Sort/sorting::RadixSort/Best/10000/real_time                           0.062 ms        0.062 ms        11171
+BM_Sort/sorting::RadixSort/Best/20000/real_time                           0.172 ms        0.172 ms         4070
+BM_Sort/sorting::RadixSort/Best/50000/real_time                           0.373 ms        0.373 ms         1872
+BM_Sort/sorting::RadixSort/Best/100000/real_time                          0.732 ms        0.732 ms          960
+BM_Sort/sorting::RadixSort/Best/real_time_BigO                             7.38 N          7.38 N    
+BM_Sort/sorting::RadixSort/Best/real_time_RMS                                 4 %             4 %    
+BM_Sort/sorting::CountingSort/Worst/10000/real_time                       0.019 ms        0.019 ms        36499
+BM_Sort/sorting::CountingSort/Worst/20000/real_time                       0.039 ms        0.039 ms        18087
+BM_Sort/sorting::CountingSort/Worst/50000/real_time                       0.090 ms        0.090 ms         7734
+BM_Sort/sorting::CountingSort/Worst/100000/real_time                      0.178 ms        0.178 ms         3922
+BM_Sort/sorting::CountingSort/Worst/real_time_BigO                         1.79 N          1.79 N    
+BM_Sort/sorting::CountingSort/Worst/real_time_RMS                             2 %             2 %    
+BM_Sort/sorting::CountingSort/Uniform/10000/real_time                     0.025 ms        0.025 ms        28186
+BM_Sort/sorting::CountingSort/Uniform/20000/real_time                     0.079 ms        0.070 ms        11127
+BM_Sort/sorting::CountingSort/Uniform/50000/real_time                     0.158 ms        0.158 ms         4434
+BM_Sort/sorting::CountingSort/Uniform/100000/real_time                    0.354 ms        0.340 ms         2135
+BM_Sort/sorting::CountingSort/Uniform/real_time_BigO                       0.21 NlgN       0.21 NlgN 
+BM_Sort/sorting::CountingSort/Uniform/real_time_RMS                           7 %             4 %    
+BM_Sort/sorting::CountingSort/Normal/10000/real_time                      0.021 ms        0.021 ms        33643
+BM_Sort/sorting::CountingSort/Normal/20000/real_time                      0.045 ms        0.045 ms        15544
+BM_Sort/sorting::CountingSort/Normal/50000/real_time                      0.128 ms        0.128 ms         5449
+BM_Sort/sorting::CountingSort/Normal/100000/real_time                     0.430 ms        0.363 ms         2453
+BM_Sort/sorting::CountingSort/Normal/real_time_BigO                        0.24 NlgN       0.21 NlgN 
+BM_Sort/sorting::CountingSort/Normal/real_time_RMS                           23 %            15 %    
+BM_Sort/sorting::CountingSort/Best/10000/real_time                        0.019 ms        0.019 ms        36235
+BM_Sort/sorting::CountingSort/Best/20000/real_time                        0.040 ms        0.040 ms        17588
+BM_Sort/sorting::CountingSort/Best/50000/real_time                        0.093 ms        0.092 ms         7461
+BM_Sort/sorting::CountingSort/Best/100000/real_time                       0.183 ms        0.182 ms         3859
+BM_Sort/sorting::CountingSort/Best/real_time_BigO                          1.84 N          1.83 N    
+BM_Sort/sorting::CountingSort/Best/real_time_RMS                              2 %             2 %    
+BM_Sort/sorting::MultiThreadedInsertionSort/Worst/10000/real_time           561 ms          439 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Worst/20000/real_time          2139 ms         1504 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Worst/50000/real_time         11631 ms         7767 ms            1
+
+BM_Sort/sorting::MultiThreadedInsertionSort/Worst/100000/real_time        43384 ms        28211 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Worst/real_time_BigO           4.36 N^2        2.84 N^2  
+BM_Sort/sorting::MultiThreadedInsertionSort/Worst/real_time_RMS               3 %             4 %    
+BM_Sort/sorting::MultiThreadedInsertionSort/Uniform/10000/real_time         561 ms          441 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Uniform/20000/real_time        2372 ms         1608 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Uniform/50000/real_time       11091 ms         7325 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Uniform/100000/real_time      41229 ms        27060 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Uniform/real_time_BigO         4.14 N^2        2.72 N^2  
+BM_Sort/sorting::MultiThreadedInsertionSort/Uniform/real_time_RMS             4 %             4 %    
+BM_Sort/sorting::MultiThreadedInsertionSort/Normal/10000/real_time          512 ms          409 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Normal/20000/real_time         2214 ms         1530 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Normal/50000/real_time        12166 ms         8010 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Normal/100000/real_time       44851 ms        29070 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Normal/real_time_BigO          4.51 N^2        2.93 N^2  
+BM_Sort/sorting::MultiThreadedInsertionSort/Normal/real_time_RMS              3 %             4 %    
+BM_Sort/sorting::MultiThreadedInsertionSort/Best/10000/real_time            891 ms          514 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Best/20000/real_time           2815 ms         1688 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Best/50000/real_time          13058 ms         8639 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Best/100000/real_time         49267 ms        31893 ms            1
+BM_Sort/sorting::MultiThreadedInsertionSort/Best/real_time_BigO            4.95 N^2        3.21 N^2  
+BM_Sort/sorting::MultiThreadedInsertionSort/Best/real_time_RMS                4 %             4 %    
+BM_Sort/sorting::MultiThreadedQuickSort/Worst/10000/real_time             0.079 ms        0.015 ms         8616
+BM_Sort/sorting::MultiThreadedQuickSort/Worst/20000/real_time             0.150 ms        0.018 ms         4700
+BM_Sort/sorting::MultiThreadedQuickSort/Worst/50000/real_time             0.578 ms        0.029 ms         1122
+BM_Sort/sorting::MultiThreadedQuickSort/Worst/100000/real_time             1.30 ms        0.043 ms          540
+BM_Sort/sorting::MultiThreadedQuickSort/Worst/real_time_BigO              12.55 N          0.48 N    
+BM_Sort/sorting::MultiThreadedQuickSort/Worst/real_time_RMS                  12 %            29 %    
+BM_Sort/sorting::MultiThreadedQuickSort/Uniform/10000/real_time           0.224 ms        0.036 ms         3168
+BM_Sort/sorting::MultiThreadedQuickSort/Uniform/20000/real_time           0.361 ms        0.060 ms         1950
+BM_Sort/sorting::MultiThreadedQuickSort/Uniform/50000/real_time           0.716 ms        0.123 ms          977
+BM_Sort/sorting::MultiThreadedQuickSort/Uniform/100000/real_time           1.28 ms        0.229 ms          546
+BM_Sort/sorting::MultiThreadedQuickSort/Uniform/real_time_BigO            13.32 N          2.35 N    
+BM_Sort/sorting::MultiThreadedQuickSort/Uniform/real_time_RMS                12 %             9 %    
+BM_Sort/sorting::MultiThreadedQuickSort/Normal/10000/real_time            0.223 ms        0.038 ms         3144
+BM_Sort/sorting::MultiThreadedQuickSort/Normal/20000/real_time            0.355 ms        0.060 ms         1973
+BM_Sort/sorting::MultiThreadedQuickSort/Normal/50000/real_time            0.712 ms        0.123 ms          989
+BM_Sort/sorting::MultiThreadedQuickSort/Normal/100000/real_time            1.27 ms        0.228 ms          552
+BM_Sort/sorting::MultiThreadedQuickSort/Normal/real_time_BigO             13.22 N          2.35 N    
+BM_Sort/sorting::MultiThreadedQuickSort/Normal/real_time_RMS                 12 %            10 %    
+BM_Sort/sorting::MultiThreadedQuickSort/Best/10000/real_time              0.048 ms        0.015 ms        14633
+BM_Sort/sorting::MultiThreadedQuickSort/Best/20000/real_time              0.076 ms        0.018 ms         9062
+BM_Sort/sorting::MultiThreadedQuickSort/Best/50000/real_time              0.272 ms        0.029 ms         2577
+BM_Sort/sorting::MultiThreadedQuickSort/Best/100000/real_time             0.560 ms        0.043 ms         1217
+BM_Sort/sorting::MultiThreadedQuickSort/Best/real_time_BigO                5.51 N          0.48 N    
+BM_Sort/sorting::MultiThreadedQuickSort/Best/real_time_RMS                    8 %            28 %    
+BM_Sort/sorting::MultiThreadedMergeSort/Worst/10000/real_time             0.973 ms        0.024 ms          718
+BM_Sort/sorting::MultiThreadedMergeSort/Worst/20000/real_time             0.592 ms        0.028 ms         1119
+BM_Sort/sorting::MultiThreadedMergeSort/Worst/50000/real_time              1.21 ms        0.040 ms          563
+BM_Sort/sorting::MultiThreadedMergeSort/Worst/100000/real_time             2.20 ms        0.056 ms          319
+BM_Sort/sorting::MultiThreadedMergeSort/Worst/real_time_BigO           85328.57 lgN     2536.52 lgN  
+BM_Sort/sorting::MultiThreadedMergeSort/Worst/real_time_RMS                  41 %            25 %    
+BM_Sort/sorting::MultiThreadedMergeSort/Uniform/10000/real_time           0.630 ms        0.046 ms         1662
+BM_Sort/sorting::MultiThreadedMergeSort/Uniform/20000/real_time            1.64 ms        0.086 ms          345
+BM_Sort/sorting::MultiThreadedMergeSort/Uniform/50000/real_time            3.04 ms        0.149 ms          237
+BM_Sort/sorting::MultiThreadedMergeSort/Uniform/100000/real_time           2.91 ms        0.217 ms          231
+BM_Sort/sorting::MultiThreadedMergeSort/Uniform/real_time_BigO            37.07 N          2.41 N    
+BM_Sort/sorting::MultiThreadedMergeSort/Uniform/real_time_RMS                42 %            23 %    
+BM_Sort/sorting::MultiThreadedMergeSort/Normal/10000/real_time            0.408 ms        0.038 ms         1709
+BM_Sort/sorting::MultiThreadedMergeSort/Normal/20000/real_time            0.510 ms        0.062 ms         1339
+BM_Sort/sorting::MultiThreadedMergeSort/Normal/50000/real_time             1.49 ms        0.122 ms          472
+BM_Sort/sorting::MultiThreadedMergeSort/Normal/100000/real_time            2.84 ms        0.217 ms          235
+BM_Sort/sorting::MultiThreadedMergeSort/Normal/real_time_BigO             28.71 N          2.27 N    
+BM_Sort/sorting::MultiThreadedMergeSort/Normal/real_time_RMS                  6 %            12 %    
+BM_Sort/sorting::MultiThreadedMergeSort/Best/10000/real_time              0.301 ms        0.022 ms         2321
+BM_Sort/sorting::MultiThreadedMergeSort/Best/20000/real_time              0.393 ms        0.027 ms         1838
+BM_Sort/sorting::MultiThreadedMergeSort/Best/50000/real_time               1.27 ms        0.038 ms          561
+BM_Sort/sorting::MultiThreadedMergeSort/Best/100000/real_time              2.33 ms        0.054 ms          286
+BM_Sort/sorting::MultiThreadedMergeSort/Best/real_time_BigO            75623.36 lgN     2404.87 lgN  
+BM_Sort/sorting::MultiThreadedMergeSort/Best/real_time_RMS                   68 %            27 %    
+BM_Sort/sorting::MultiThreadedHeapSort/Worst/10000/real_time              0.368 ms        0.368 ms         1903
+BM_Sort/sorting::MultiThreadedHeapSort/Worst/20000/real_time              0.828 ms        0.827 ms          845
+BM_Sort/sorting::MultiThreadedHeapSort/Worst/50000/real_time               2.31 ms         2.31 ms          300
+BM_Sort/sorting::MultiThreadedHeapSort/Worst/100000/real_time              5.11 ms         5.11 ms          136
+BM_Sort/sorting::MultiThreadedHeapSort/Worst/real_time_BigO                3.05 NlgN       3.05 NlgN 
+BM_Sort/sorting::MultiThreadedHeapSort/Worst/real_time_RMS                    2 %             2 %    
+BM_Sort/sorting::MultiThreadedHeapSort/Uniform/10000/real_time            0.428 ms        0.428 ms         1625
+BM_Sort/sorting::MultiThreadedHeapSort/Uniform/20000/real_time            0.958 ms        0.958 ms          729
+BM_Sort/sorting::MultiThreadedHeapSort/Uniform/50000/real_time             2.71 ms         2.70 ms          250
+BM_Sort/sorting::MultiThreadedHeapSort/Uniform/100000/real_time            6.08 ms         6.04 ms          116
+BM_Sort/sorting::MultiThreadedHeapSort/Uniform/real_time_BigO              3.62 NlgN       3.60 NlgN 
+BM_Sort/sorting::MultiThreadedHeapSort/Uniform/real_time_RMS                  3 %             3 %    
+BM_Sort/sorting::MultiThreadedHeapSort/Normal/10000/real_time             0.428 ms        0.428 ms         1634
+BM_Sort/sorting::MultiThreadedHeapSort/Normal/20000/real_time             0.955 ms        0.955 ms          731
+BM_Sort/sorting::MultiThreadedHeapSort/Normal/50000/real_time              2.70 ms         2.70 ms          260
+BM_Sort/sorting::MultiThreadedHeapSort/Normal/100000/real_time             6.01 ms         6.01 ms          116
+BM_Sort/sorting::MultiThreadedHeapSort/Normal/real_time_BigO               3.58 NlgN       3.58 NlgN 
+BM_Sort/sorting::MultiThreadedHeapSort/Normal/real_time_RMS                   3 %             3 %    
+BM_Sort/sorting::MultiThreadedHeapSort/Best/10000/real_time               0.406 ms        0.406 ms         1722
+BM_Sort/sorting::MultiThreadedHeapSort/Best/20000/real_time               0.879 ms        0.879 ms          782
+BM_Sort/sorting::MultiThreadedHeapSort/Best/50000/real_time                2.45 ms         2.45 ms          285
+BM_Sort/sorting::MultiThreadedHeapSort/Best/100000/real_time               6.07 ms         5.56 ms          132
+BM_Sort/sorting::MultiThreadedHeapSort/Best/real_time_BigO                 3.55 NlgN       3.30 NlgN 
+BM_Sort/sorting::MultiThreadedHeapSort/Best/real_time_RMS                     8 %             3 %    
+BM_Sort/sorting::MultiThreadedBubbleSort/Worst/10000/real_time              369 ms          299 ms            2
+BM_Sort/sorting::MultiThreadedBubbleSort/Worst/20000/real_time             1528 ms         1222 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Worst/50000/real_time             5331 ms         5321 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Worst/100000/real_time           21304 ms        21274 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Worst/real_time_BigO              2.13 N^2        2.13 N^2  
+BM_Sort/sorting::MultiThreadedBubbleSort/Worst/real_time_RMS                  5 %             3 %    
+BM_Sort/sorting::MultiThreadedBubbleSort/Uniform/10000/real_time            206 ms          177 ms            5
+BM_Sort/sorting::MultiThreadedBubbleSort/Uniform/20000/real_time           1008 ms          811 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Uniform/50000/real_time           4547 ms         4288 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Uniform/100000/real_time         17031 ms        17025 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Uniform/real_time_BigO            1.71 N^2        1.70 N^2  
+BM_Sort/sorting::MultiThreadedBubbleSort/Uniform/real_time_RMS                4 %             1 %    
+BM_Sort/sorting::MultiThreadedBubbleSort/Normal/10000/real_time             145 ms          145 ms            5
+BM_Sort/sorting::MultiThreadedBubbleSort/Normal/20000/real_time             601 ms          600 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Normal/50000/real_time            3965 ms         3964 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Normal/100000/real_time          18541 ms        17730 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Normal/real_time_BigO             1.84 N^2        1.76 N^2  
+BM_Sort/sorting::MultiThreadedBubbleSort/Normal/real_time_RMS                 6 %             4 %    
+BM_Sort/sorting::MultiThreadedBubbleSort/Best/10000/real_time              12.6 ms         12.6 ms           56
+BM_Sort/sorting::MultiThreadedBubbleSort/Best/20000/real_time              50.1 ms         50.0 ms           14
+BM_Sort/sorting::MultiThreadedBubbleSort/Best/50000/real_time               332 ms          332 ms            2
+BM_Sort/sorting::MultiThreadedBubbleSort/Best/100000/real_time             1302 ms         1302 ms            1
+BM_Sort/sorting::MultiThreadedBubbleSort/Best/real_time_BigO               0.13 N^2        0.13 N^2  
+BM_Sort/sorting::MultiThreadedBubbleSort/Best/real_time_RMS                   1 %             1 %    
+(base) user@MacBook-Air-user Sorting-Algorithms % 
+(base) user@MacBook-Air-user Sorting-Algorithms %
