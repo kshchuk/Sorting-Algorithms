@@ -18,6 +18,10 @@ public:
 private:
     void quickSort(T* arr, int low, int high) {
         if (low >= high) return;
+        int mid = low + (high - low) / 2;
+        if (arr[mid] < arr[low]) std::swap(arr[low], arr[mid]);
+        if (arr[high] < arr[low]) std::swap(arr[low], arr[high]);
+        if (arr[mid] < arr[high]) std::swap(arr[mid], arr[high]);
         int pi = partition(arr, low, high);
         int size = high - low + 1;
         if (size <= kMinSizeForThreads) {

@@ -5,14 +5,17 @@
 
 #include "tests.hpp"
 #include "benchmarks.hpp"
+#include "experiment.hpp"
 
 int main(int argc, char* argv[])
 {
     bool run_benchmarks = false;
+    bool run_experiment = false;
     for (int i = 1; i < argc; ++i) {
         if (std::strcmp(argv[i], "--run_benchmarks") == 0) {
             run_benchmarks = true;
-            break;
+        } else if (std::strcmp(argv[i], "--run_experiment") == 0) {
+            run_experiment = true;
         }
     }
 
@@ -20,6 +23,11 @@ int main(int argc, char* argv[])
     int ret = RUN_ALL_TESTS();
     if (ret != 0) {
         return ret;
+    }
+
+    if (run_experiment) {
+        experiment::runAndPrint(true);
+        return 0;
     }
 
     if (!run_benchmarks) {
@@ -35,9 +43,11 @@ int main(int argc, char* argv[])
     REGISTER_BENCHMARK_ALL_DISTS(int, sorting::ShellSort);
     REGISTER_BENCHMARK_ALL_DISTS(int, sorting::RadixSort);
     REGISTER_BENCHMARK_ALL_DISTS(int, sorting::CountingSort);
+    REGISTER_BENCHMARK_ALL_DISTS(int, sorting::MultiThreadedInsertionSort);
     REGISTER_BENCHMARK_ALL_DISTS(int, sorting::MultiThreadedQuickSort);
     REGISTER_BENCHMARK_ALL_DISTS(int, sorting::MultiThreadedMergeSort);
     REGISTER_BENCHMARK_ALL_DISTS(int, sorting::MultiThreadedHeapSort);
+    REGISTER_BENCHMARK_ALL_DISTS(int, sorting::MultiThreadedBubbleSort);
 
     benchmark::Initialize(&argc, argv);
     benchmark::RunSpecifiedBenchmarks();

@@ -3,6 +3,7 @@
 #include <vector>
 #include <random>
 #include <cmath>
+#include "sorting/instrumented_type.hpp"
 
 namespace bench_data {
 
@@ -68,8 +69,10 @@ inline std::vector<int> generateNormal(int n, double mean, double stddev) {
     std::vector<int> arr(n);
     std::normal_distribution<double> dist(mean, stddev);
     auto& gen = getGenerator();
-    for (int i = 0; i < n; ++i)
-        arr[i] = static_cast<int>(std::round(dist(gen)));
+    for (int i = 0; i < n; ++i) {
+        int v = static_cast<int>(std::round(dist(gen)));
+        arr[i] = std::max(0, v);
+    }
     return arr;
 }
 
@@ -89,6 +92,51 @@ inline std::vector<int> generateNormalInt(int n) {
 /** Обгортки для бенчмарків (виклик з одним аргументом) */
 inline std::vector<int> generateAsymptoticReverseSortedInt(int n) {
     return generateAsymptoticReverseSorted<int>(n);
+}
+
+// --- Instrumented (Counted) types for experiment: wrap raw vectors ---
+
+template <typename T>
+std::vector<sorting::Counted<T>> wrapAsCounted(std::vector<T>&& raw) {
+    std::vector<sorting::Counted<T>> out;
+    out.reserve(raw.size());
+    for (T& v : raw)
+        out.push_back(sorting::Counted<T>(std::move(v)));
+    return out;
+}
+
+template <typename T>
+std::vector<sorting::Counted<T>> wrapAsCounted(const std::vector<T>& raw) {
+    std::vector<sorting::Counted<T>> out;
+    out.reserve(raw.size());
+    for (const T& v : raw)
+        out.push_back(sorting::Counted<T>(v));
+    return out;
+}
+
+inline std::vector<sorting::CountedInt> generateUniformCountedInt(int n) {
+    return wrapAsCounted(generateUniformInt(n));
+}
+inline std::vector<sorting::CountedDouble> generateUniformCountedDouble(int n) {
+    return wrapAsCounted(generateUniformDouble(n));
+}
+inline std::vector<sorting::CountedInt> generateNormalCountedInt(int n) {
+    return wrapAsCounted(generateNormalInt(n));
+}
+inline std::vector<sorting::CountedDouble> generateNormalCountedDouble(int n) {
+    return wrapAsCounted(generateNormalDouble(n));
+}
+inline std::vector<sorting::CountedInt> generateAsymptoticSortedCountedInt(int n) {
+    return wrapAsCounted(generateAsymptoticSorted<int>(n));
+}
+inline std::vector<sorting::CountedDouble> generateAsymptoticSortedCountedDouble(int n) {
+    return wrapAsCounted(generateAsymptoticSorted<double>(n));
+}
+inline std::vector<sorting::CountedInt> generateAsymptoticReverseSortedCountedInt(int n) {
+    return wrapAsCounted(generateAsymptoticReverseSorted<int>(n));
+}
+inline std::vector<sorting::CountedDouble> generateAsymptoticReverseSortedCountedDouble(int n) {
+    return wrapAsCounted(generateAsymptoticReverseSorted<double>(n));
 }
 
 }  // namespace bench_data

@@ -14,13 +14,24 @@ namespace sorting {
  */
 template <typename T>
 class MultiThreadedBubbleSort : public SortStrategy<T> {
+    static constexpr int kMaxThreads = 64;
+
 public:
     void sort(T* arr, int size) override {
-        std::vector<std::thread> threads;
-        for (int i = 0; i < size - 1; i++) {
-            threads.push_back(std::thread(&MultiThreadedBubbleSort::bubbleSortPass, this, arr, size, i));
+        const int numPasses = size - 1;
+        if (numPasses <= 0) return;
+        if (numPasses <= kMaxThreads) {
+            std::vector<std::thread> threads;
+            threads.reserve(static_cast<size_t>(numPasses));
+            for (int i = 0; i < numPasses; i++) {
+                threads.emplace_back(&MultiThreadedBubbleSort::bubbleSortPass, this, arr, size, i);
+            }
+            for (auto& th : threads) th.join();
+        } else {
+            for (int i = 0; i < numPasses; i++) {
+                bubbleSortPass(arr, size, i);
+            }
         }
-        for (auto& th : threads) th.join();
     }
 
 private:

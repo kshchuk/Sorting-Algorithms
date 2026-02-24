@@ -58,3 +58,21 @@ find_package(benchmark QUIET)
 if(benchmark_FOUND)
   target_link_libraries(strategy_bench PRIVATE benchmark::benchmark)
 endif()
+
+# Optional: Qt6 app for sorting benchmark charts (execution time vs array size for Uniform/Normal).
+# Requires Qt6 with Widgets and Charts (e.g. macOS: brew install qt@6; set CMAKE_PREFIX_PATH).
+find_package(Qt6 QUIET COMPONENTS Widgets Charts)
+if(Qt6_FOUND)
+  set(SORTING_CHARTS_SOURCES
+    apps/sorting_charts/main.cpp
+    apps/sorting_charts/mainwindow.cpp
+  )
+  add_executable(sorting_charts ${SORTING_CHARTS_SOURCES})
+  set_target_properties(sorting_charts PROPERTIES AUTOMOC ON)
+  target_include_directories(sorting_charts PRIVATE
+    ${INCLUDE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/apps/strategy_bench
+    ${CMAKE_CURRENT_SOURCE_DIR}/apps/sorting_charts
+  )
+  target_link_libraries(sorting_charts PRIVATE Qt6::Widgets Qt6::Charts)
+endif()

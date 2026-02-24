@@ -16,12 +16,17 @@ public:
     }
 
 private:
+    static int digit(T x, int exp) {
+        int d = (x / exp) % 10;
+        return d < 0 ? d + 10 : d;
+    }
+
     void countSort(T* arr, int size, int exp) {
         T* output = new T[size];
         int count[10] = { 0 };
 
         for (int i = 0; i < size; i++) {
-            count[(arr[i] / exp) % 10]++;
+            count[digit(arr[i], exp)]++;
         }
 
         for (int i = 1; i < 10; i++) {
@@ -29,8 +34,9 @@ private:
         }
 
         for (int i = size - 1; i >= 0; i--) {
-            output[count[(arr[i] / exp) % 10] - 1] = arr[i];
-            count[(arr[i] / exp) % 10]--;
+            int d = digit(arr[i], exp);
+            output[count[d] - 1] = arr[i];
+            count[d]--;
         }
 
         for (int i = 0; i < size; i++) {
