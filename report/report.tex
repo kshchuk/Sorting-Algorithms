@@ -1,0 +1,129 @@
+% Лабораторний проєкт 1 — Алгоритми сортування
+% Кіщук Ярослав Ярославович
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[ukrainian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{hyperref}
+\graphicspath{{./}}
+
+\title{\textbf{ОПЕРАЦІЙНІ СИСТЕМИ} \\ Лабораторний проєкт 1 \\ Алгоритми сортування}
+\author{Кіщук Ярослав Ярославович}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{center}
+Міністерство освіти і науки України \\
+Київський національний університет імені Тараса Шевченка \\
+Факультет інформаційних технологій \\
+\bigskip
+\textbf{ОПЕРАЦІЙНІ СИСТЕМИ} \\
+Лабораторний проєкт 1 \\
+\textbf{Алгоритми сортування} \\
+\vfill
+Виконав: студент групи \underline{\hspace{4cm}} Кіщук Ярослав Ярославович \\
+Перевірила: \underline{\hspace{5cm}} \\
+\vfill
+Київ --- 2025
+\end{center}
+\newpage
+
+\section{Мета роботи}
+\label{sec:meta}
+Опанувати реалізацію та експериментальне дослідження класичних і багатопотокових алгоритмів сортування масивів; порівняти їх за часом виконання, кількістю порівнянь і об’ємом додаткової пам’яті для різних розмірів даних та розподілів (найгірший / рівномірний / нормальний / найкращий випадок); перевірити відповідність вимірювань теоретичній складності та зробити висновки щодо доцільності вибору алгоритму залежно від умов.
+
+\section{Завдання}
+Реалізувати та дослідити алгоритми сортування масивів для типів \texttt{int} та \texttt{double}. Для кожного алгоритму оцінити:
+\begin{itemize}
+\item об’єм додаткової пам’яті $V$ (байти);
+\item кількість порівнянь $K$;
+\item час виконання $T$ (мс).
+\end{itemize}
+Теоретично оцінити складність алгоритмів. Провести експерименти для розмірів $N \in \{10^4, 2\cdot10^4, 5\cdot10^4, 10^5, 2\cdot10^5, 5\cdot10^5, 10^6\}$ та чотирьох умов даних: найгірший випадок, рівномірний розподіл, нормальний розподіл, найкращий випадок. Результати подати у вигляді таблиць; за бажанням --- графіків.
+
+\section{Теоретична складність алгоритмів}
+\label{sec:complexity}
+\begin{itemize}
+\item \textbf{InsertionSort} --- $O(n^2)$; додаткова пам’ять $O(1)$.
+\item \textbf{QuickSort} --- $O(n^2)$ у найгіршому, $O(n \log n)$ в середньому; додаткова пам’ять $O(\log n)$ (стека).
+\item \textbf{MergeSort} --- $O(n \log n)$; додаткова пам’ять $O(n)$.
+\item \textbf{HeapSort} --- $O(n \log n)$; додаткова пам’ять $O(1)$.
+\item \textbf{BubbleSort} --- $O(n^2)$; додаткова пам’ять $O(1)$.
+\item \textbf{SelectionSort} --- $O(n^2)$; додаткова пам’ять $O(1)$.
+\item \textbf{ShellSort} --- залежить від послідовності кроків; типово $O(n^{1.25})$--$O(n^2)$; додаткова пам’ять $O(1)$.
+\item \textbf{RadixSort} (для \texttt{int}) --- $O(n \cdot k)$, де $k$ --- кількість розрядів; додаткова пам’ять $O(n + \text{розмір алфавіту})$.
+\item \textbf{CountingSort} (для \texttt{int}) --- $O(n + \text{діапазон})$; додаткова пам’ять $O(\text{діапазон})$.
+\item \textbf{MultiThreadedInsertionSort} --- та сама складність $O(n^2)$, паралелізація по блоках.
+\item \textbf{MultiThreadedQuickSort} --- $O(n \log n)$ в середньому при паралелізації.
+\item \textbf{MultiThreadedMergeSort} --- $O(n \log n)$; додаткова пам’ять $O(n)$.
+\item \textbf{MultiThreadedHeapSort} --- $O(n \log n)$; додаткова пам’ять $O(1)$.
+\item \textbf{MultiThreadedBubbleSort} --- $O(n^2)$; паралелізація по проходах.
+\end{itemize}
+
+\section{Таблиці з результатами експериментів}
+Експерименти проведено для типів \texttt{int} та \texttt{double}. Умови: Найгірший (Worst), Рівномірний (Uniform), Нормальний (Normal), Найкращий (Best). Для повільних алгоритмів частина вимірювань при великих $N$ пропущена через таймаут (5 хв).
+
+\subsection{Тип \texttt{int}}
+\input{tables_int}
+
+\subsection{Тип \texttt{double}}
+Для \texttt{double} не використовуються RadixSort та CountingSort (призначені для цілих).
+\input{tables_double}
+
+\section{Висновок}
+\label{sec:visnovok}
+\begin{itemize}
+\item Найшвидшими на великих об’ємах виявилися алгоритми лінійної та лінійологарифмічної складності: CountingSort і RadixSort (для \texttt{int}), QuickSort і MultiThreadedQuickSort, MergeSort і MultiThreadedMergeSort, HeapSort і MultiThreadedHeapSort. Час виконання відповідає теоретичній оцінці $O(n)$ / $O(n \log n)$.
+\item Алгоритми $O(n^2)$ (InsertionSort, BubbleSort, SelectionSort) та їхні багатопотокові варіанти на великих $N$ значно повільніші; для них спостерігалися таймаути при $N \geq 10^5$--$2\cdot10^5$, тому подальші розміри пропускалися.
+\item Багатопотокові версії (MultiThreadedQuickSort, MultiThreadedMergeSort, MultiThreadedHeapSort) дають помітне прискорення на великих масивах порівняно з однопотоковими; паралельні варіанти InsertionSort і BubbleSort через характер алгоритмів не дають виграшу і часто гірші за оригінали.
+\item Додаткова пам’ять $V$ узгоджується з оцінками: MergeSort і MultiThreadedMergeSort мають значне $V$, RadixSort і CountingSort --- помірне, QuickSort/HeapSort --- незначне або нульове.
+\item Для типів \texttt{int} і \texttt{double} результати подібні; RadixSort і CountingSort використовуються лише для \texttt{int}. Графіки часу від $N$ підтверджують лінійну або лінійологарифмічну залежність для ефективних алгоритмів і квадратичну --- для простих.
+\end{itemize}
+
+\section{Код програми та скріни}
+Реалізація, бенчмарки та додаток для графіків доступні в репозиторії:
+\begin{center}
+\url{https://github.com/kshchuk/Sorting-Algorithms}
+\end{center}
+
+\subsection*{Скріншоти консолі та GUI}
+Консольний вивід бенчмарку (стратегії, прогрес, таблиці CSV):
+\begin{center}
+\includegraphics[width=0.95\textwidth]{console.png}
+\end{center}
+\vspace{1em}
+Графічний додаток \texttt{sorting\_charts} (вибір типу даних, запуск бенчмарків, графіки часу від $N$):
+\begin{center}
+\includegraphics[width=0.95\textwidth]{gui.png}
+\end{center}
+
+\subsection*{Графіки залежності часу від розміру масиву}
+Графіки побудовано за результатами експериментів для розподілів Uniform та Normal (типи \texttt{int} та \texttt{double}).
+\begin{center}
+\includegraphics[width=0.9\textwidth]{uni-int.png}
+\end{center}
+\captionof{figure}{Рівномірний розподіл, тип \texttt{int}.}
+\vspace{0.5em}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{normal-int.png}
+\end{center}
+\captionof{figure}{Нормальний розподіл, тип \texttt{int}.}
+\vspace{0.5em}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{uni-double.png}
+\end{center}
+\captionof{figure}{Рівномірний розподіл, тип \texttt{double}.}
+\vspace{0.5em}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{uni-normal.png}
+\end{center}
+\captionof{figure}{Рівномірний та нормальний розподіли (порівняння).}
+\end{document}

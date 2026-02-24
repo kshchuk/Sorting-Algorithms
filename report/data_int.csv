@@ -1,0 +1,531 @@
+type,algorithm,condition,N,V_bytes,K,T_ms
+int,InsertionSort,Worst,10000,0,100009998,21.2427
+int,InsertionSort,Uniform,10000,0,49984670,6.87352
+int,InsertionSort,Normal,10000,0,50073377,6.86713
+int,InsertionSort,Best,10000,0,29997,0.006333
+int,InsertionSort,Worst,20000,0,400019998,54.8249
+int,InsertionSort,Uniform,20000,0,200026564,27.5665
+int,InsertionSort,Normal,20000,0,199963392,27.5324
+int,InsertionSort,Best,20000,0,59997,0.010417
+int,InsertionSort,Worst,50000,0,2500049998,335.404
+int,InsertionSort,Uniform,50000,0,1250539594,191.627
+int,InsertionSort,Normal,50000,0,1249733281,169.877
+int,InsertionSort,Best,50000,0,149997,0.025292
+int,InsertionSort,Worst,100000,0,10000099998,1291.2
+int,InsertionSort,Uniform,100000,0,5001117300,655.085
+int,InsertionSort,Normal,100000,0,4999430849,654.697
+int,InsertionSort,Best,100000,0,299997,0.050208
+int,InsertionSort,Worst,200000,0,40000199998,5170.93
+int,InsertionSort,Uniform,200000,0,19998259524,2595.84
+int,QuickSort,Worst,10000,0,640761,0.119291
+int,QuickSort,Uniform,10000,0,387123,0.362213
+int,QuickSort,Normal,10000,0,382452,0.350131
+int,QuickSort,Best,10000,0,336510,0.056792
+int,QuickSort,Worst,20000,0,1414936,0.255708
+int,QuickSort,Uniform,20000,0,836238,0.762842
+int,QuickSort,Normal,20000,0,830397,0.752856
+int,QuickSort,Best,20000,0,722991,0.120458
+int,QuickSort,Worst,50000,0,3881872,0.681917
+int,QuickSort,Uniform,50000,0,2286564,2.06803
+int,QuickSort,Normal,50000,0,2288413,2.02824
+int,QuickSort,Best,50000,0,2009705,0.322208
+int,QuickSort,Worst,100000,0,8421073,1.46329
+int,QuickSort,Uniform,100000,0,4887532,4.37621
+int,QuickSort,Normal,100000,0,4880398,4.28099
+int,QuickSort,Best,100000,0,4269386,0.693292
+int,QuickSort,Worst,200000,0,18159919,3.05854
+int,QuickSort,Uniform,200000,0,10353686,9.36152
+int,QuickSort,Normal,200000,0,10315269,142.522
+int,QuickSort,Best,200000,0,9038747,1.31529
+int,QuickSort,Worst,500000,0,49912069,7.90983
+int,QuickSort,Uniform,500000,0,27718167,23.813
+int,QuickSort,Normal,500000,0,27893531,29.9967
+int,QuickSort,Best,500000,0,23674671,5.97354
+int,QuickSort,Worst,1000000,0,106439401,29.9857
+int,QuickSort,Uniform,1000000,0,58631099,67.0206
+int,QuickSort,Normal,1000000,0,59078880,64.4754
+int,QuickSort,Best,1000000,0,49849312,8.84529
+int,MergeSort,Worst,10000,534464,336240,0.784958
+int,MergeSort,Uniform,10000,534464,387678,1.11438
+int,MergeSort,Normal,10000,534464,387691,1.12045
+int,MergeSort,Best,10000,534464,331840,0.717166
+int,MergeSort,Worst,20000,1148928,722480,1.38425
+int,MergeSort,Uniform,20000,1148928,835375,2.31216
+int,MergeSort,Normal,20000,1148928,835373,2.47498
+int,MergeSort,Best,20000,1148928,713680,1.57371
+int,MergeSort,Worst,50000,3137856,1970880,3.92062
+int,MergeSort,Uniform,50000,3137856,2287118,7.05392
+int,MergeSort,Normal,50000,3137856,2287128,7.43871
+int,MergeSort,Best,50000,3137856,1951440,4.72967
+int,MergeSort,Worst,100000,6675712,4191760,9.131
+int,MergeSort,Uniform,100000,6675712,4874207,14.7077
+int,MergeSort,Normal,100000,6675712,4874212,13.8536
+int,MergeSort,Best,100000,6675712,4152880,8.54258
+int,MergeSort,Worst,200000,14151424,8883520,16.6379
+int,MergeSort,Uniform,200000,14151424,10348409,29.5947
+int,MergeSort,Normal,200000,14151424,10348502,30.1229
+int,MergeSort,Best,200000,14151424,8805760,16.9975
+int,MergeSort,Worst,500000,37902848,23734640,41.0437
+int,MergeSort,Uniform,500000,37902848,27788558,74.849
+int,MergeSort,Normal,500000,37902848,27788543,17966.7
+int,HeapSort,Worst,10000,0,640328,0.832833
+int,HeapSort,Uniform,10000,0,607968,0.723366
+int,HeapSort,Normal,10000,0,607808,0.671327
+int,HeapSort,Best,10000,0,576770,0.5605
+int,HeapSort,Worst,20000,0,1377708,1.26242
+int,HeapSort,Uniform,20000,0,1315979,1.50525
+int,HeapSort,Normal,20000,0,1315509,1.54611
+int,HeapSort,Best,20000,0,1256309,1.32871
+int,HeapSort,Worst,50000,0,3775350,3.94292
+int,HeapSort,Uniform,50000,0,3622164,4.8361
+int,HeapSort,Normal,50000,0,3620773,5.18143
+int,HeapSort,Best,50000,0,3462723,4.93612
+int,HeapSort,Worst,100000,0,8065079,11.0027
+int,HeapSort,Uniform,100000,0,7744637,11.7208
+int,HeapSort,Normal,100000,0,7740836,10.3934
+int,HeapSort,Best,100000,0,7418942,9.70583
+int,HeapSort,Worst,200000,0,17124392,20.8726
+int,HeapSort,Uniform,200000,0,16488953,22.7871
+int,HeapSort,Normal,200000,0,16480164,22.4334
+int,HeapSort,Best,200000,0,15843487,17.8251
+int,HeapSort,Worst,500000,0,45904885,50.7472
+int,HeapSort,Uniform,500000,0,44469622,65.2777
+int,HeapSort,Normal,500000,0,44443498,63.446
+int,HeapSort,Best,500000,0,42983347,43.8092
+int,HeapSort,Worst,1000000,0,97055445,95.8954
+int,HeapSort,Uniform,1000000,0,93938875,124.599
+int,HeapSort,Normal,1000000,0,93880027,130.07
+int,HeapSort,Best,1000000,0,91001660,105.112
+int,BubbleSort,Worst,10000,0,199980000,23.3365
+int,BubbleSort,Uniform,10000,0,125024681,37.5816
+int,BubbleSort,Normal,10000,0,124986001,35.2301
+int,BubbleSort,Best,10000,0,49995000,17.9921
+int,BubbleSort,Worst,20000,0,799960000,84.108
+int,BubbleSort,Uniform,20000,0,499889396,148.212
+int,BubbleSort,Normal,20000,0,499758902,154.072
+int,BubbleSort,Best,20000,0,199990000,71.2126
+int,BubbleSort,Worst,50000,0,4999900000,535.468
+int,BubbleSort,Uniform,50000,0,3123965381,1060.22
+int,BubbleSort,Normal,50000,0,3124389927,1032.99
+int,BubbleSort,Best,50000,0,1249975000,484.386
+int,BubbleSort,Worst,100000,0,19999800000,2410.23
+int,BubbleSort,Uniform,100000,0,12502770707,14318.1
+int,SelectionSort,Worst,10000,0,50024997,82.868
+int,SelectionSort,Uniform,10000,0,50024997,77.7536
+int,SelectionSort,Normal,10000,0,50024997,74.1683
+int,SelectionSort,Best,10000,0,50024997,74.5343
+int,SelectionSort,Worst,20000,0,200049997,291.704
+int,SelectionSort,Uniform,20000,0,200049997,284.049
+int,SelectionSort,Normal,20000,0,200049997,1057.6
+int,SelectionSort,Best,20000,0,200049997,270.034
+int,SelectionSort,Worst,50000,0,1250124997,1561.03
+int,SelectionSort,Uniform,50000,0,1250124997,34655.1
+int,ShellSort,Worst,10000,0,475148,0.107
+int,ShellSort,Uniform,10000,0,651986,0.550118
+int,ShellSort,Normal,10000,0,647043,0.509679
+int,ShellSort,Best,10000,0,360015,0.067667
+int,ShellSort,Worst,20000,0,1030268,0.211041
+int,ShellSort,Uniform,20000,0,1497796,1.13568
+int,ShellSort,Normal,20000,0,1483587,1.13427
+int,ShellSort,Best,20000,0,780015,0.13125
+int,ShellSort,Worst,50000,0,2844597,0.61125
+int,ShellSort,Uniform,50000,0,4482575,4.41208
+int,ShellSort,Normal,50000,0,4465279,3.64437
+int,ShellSort,Best,50000,0,2100018,0.373416
+int,ShellSort,Worst,100000,0,6089157,1.37008
+int,ShellSort,Uniform,100000,0,10211548,8.02393
+int,ShellSort,Normal,100000,0,10148358,8.15801
+int,ShellSort,Best,100000,0,4500018,0.855458
+int,ShellSort,Worst,200000,0,12978277,3.0145
+int,ShellSort,Uniform,200000,0,23286075,17.8312
+int,ShellSort,Normal,200000,0,23152485,19.4154
+int,ShellSort,Best,200000,0,9600018,1.93988
+int,ShellSort,Worst,500000,0,33857544,8.52579
+int,ShellSort,Uniform,500000,0,66275789,53.9444
+int,ShellSort,Normal,500000,0,66014130,46.7032
+int,ShellSort,Best,500000,0,25500021,4.60954
+int,ShellSort,Worst,1000000,0,71715048,16.2067
+int,ShellSort,Uniform,1000000,0,152691982,103.758
+int,ShellSort,Normal,1000000,0,152410003,103.87
+int,ShellSort,Best,1000000,0,54000021,9.80425
+int,RadixSort,Worst,10000,160000,170000,0.065708
+int,RadixSort,Uniform,10000,200000,210000,0.103207
+int,RadixSort,Normal,10000,200000,210000,0.110255
+int,RadixSort,Best,10000,160000,170000,0.070958
+int,RadixSort,Worst,20000,400000,420000,0.199084
+int,RadixSort,Uniform,20000,400000,420000,0.184032
+int,RadixSort,Normal,20000,400000,420000,0.224102
+int,RadixSort,Best,20000,400000,420000,0.190333
+int,RadixSort,Worst,50000,1000000,1050000,0.430709
+int,RadixSort,Uniform,50000,1090000,1140000,0.536238
+int,RadixSort,Normal,50000,1000000,1050000,0.47576
+int,RadixSort,Best,50000,1000000,1050000,0.419958
+int,RadixSort,Worst,100000,2000000,2100000,0.809292
+int,RadixSort,Uniform,100000,2400000,2500000,1.20794
+int,RadixSort,Normal,100000,2400000,2500000,1.27323
+int,RadixSort,Best,100000,2000000,2100000,0.823917
+int,RadixSort,Worst,200000,4800000,5000000,2.15008
+int,RadixSort,Uniform,200000,4800000,5000000,2.08981
+int,RadixSort,Normal,200000,4800000,5000000,2.49762
+int,RadixSort,Best,200000,4800000,5000000,2.10475
+int,RadixSort,Worst,500000,12000000,12500000,4.68938
+int,RadixSort,Uniform,500000,12680000,13180000,5.69885
+int,RadixSort,Normal,500000,12000000,12500000,5.70658
+int,RadixSort,Best,500000,12000000,12500000,4.89458
+int,RadixSort,Worst,1000000,24000000,25000000,10.648
+int,RadixSort,Uniform,1000000,28000000,29000000,13.9061
+int,RadixSort,Normal,1000000,28000000,29000000,14.3678
+int,CountingSort,Worst,10000,80000,30000,0.024083
+int,CountingSort,Uniform,10000,119992,30000,0.0282754
+int,CountingSort,Normal,10000,85316,30000,0.02935
+int,CountingSort,Best,10000,80000,30000,0.018291
+int,CountingSort,Worst,20000,160000,60000,0.112541
+int,CountingSort,Uniform,20000,239988,60000,0.0749863
+int,CountingSort,Normal,20000,173955,60000,0.0456961
+int,CountingSort,Best,20000,160000,60000,0.089541
+int,CountingSort,Worst,50000,400000,150000,0.222125
+int,CountingSort,Uniform,50000,599993,150000,0.175842
+int,CountingSort,Normal,50000,442439,150000,0.139616
+int,CountingSort,Best,50000,400000,150000,0.10125
+int,CountingSort,Worst,100000,800000,300000,0.200667
+int,CountingSort,Uniform,100000,1199992,300000,0.392282
+int,CountingSort,Normal,100000,895665,300000,0.366857
+int,CountingSort,Best,100000,800000,300000,0.243167
+int,CountingSort,Worst,200000,1600000,600000,0.473375
+int,CountingSort,Uniform,200000,2399991,600000,2.11627
+int,CountingSort,Normal,200000,1809615,600000,1.2506
+int,CountingSort,Best,200000,1600000,600000,0.688
+int,CountingSort,Worst,500000,4000000,1500000,1.9725
+int,CountingSort,Uniform,500000,5999990,1500000,3.62365
+int,CountingSort,Normal,500000,4578449,1500000,2.70322
+int,CountingSort,Best,500000,4000000,1500000,1.21713
+int,CountingSort,Worst,1000000,8000000,3000000,2.44279
+int,CountingSort,Uniform,1000000,11999992,3000000,4.17168
+int,CountingSort,Normal,1000000,9226813,3000000,3.39283
+int,CountingSort,Best,1000000,8000000,3000000,1.89225
+int,MultiThreadedInsertionSort,Worst,10000,822080,0,610.322
+int,MultiThreadedInsertionSort,Uniform,10000,822080,0,13157.3
+int,MultiThreadedQuickSort,Worst,10000,112,25012,0.168041
+int,MultiThreadedQuickSort,Uniform,10000,112,24763,0.323554
+int,MultiThreadedQuickSort,Normal,10000,112,24832,0.301517
+int,MultiThreadedQuickSort,Best,10000,112,25006,0.068916
+int,MultiThreadedQuickSort,Worst,20000,112,50012,0.269625
+int,MultiThreadedQuickSort,Uniform,20000,112,51072,0.538127
+int,MultiThreadedQuickSort,Normal,20000,112,49279,0.557077
+int,MultiThreadedQuickSort,Best,20000,112,50006,0.153458
+int,MultiThreadedQuickSort,Worst,50000,112,125012,0.987916
+int,MultiThreadedQuickSort,Uniform,50000,112,126236,1.1793
+int,MultiThreadedQuickSort,Normal,50000,112,128239,1.40861
+int,MultiThreadedQuickSort,Best,50000,112,125006,0.809917
+int,MultiThreadedQuickSort,Worst,100000,112,250012,3.06996
+int,MultiThreadedQuickSort,Uniform,100000,112,250868,4.46988
+int,MultiThreadedQuickSort,Normal,100000,112,254602,1.76252
+int,MultiThreadedQuickSort,Best,100000,112,250006,0.648792
+int,MultiThreadedQuickSort,Worst,200000,112,500012,3.29012
+int,MultiThreadedQuickSort,Uniform,200000,112,485451,7.71922
+int,MultiThreadedQuickSort,Normal,200000,112,513157,3.13643
+int,MultiThreadedQuickSort,Best,200000,112,500006,1.41892
+int,MultiThreadedQuickSort,Worst,500000,112,1250012,6.99829
+int,MultiThreadedQuickSort,Uniform,500000,112,1260574,6.23808
+int,MultiThreadedQuickSort,Normal,500000,112,1208971,6.134
+int,MultiThreadedQuickSort,Best,500000,112,1250006,2.63488
+int,MultiThreadedQuickSort,Worst,1000000,112,2500012,17.4286
+int,MultiThreadedQuickSort,Uniform,1000000,112,2509864,12.557
+int,MultiThreadedQuickSort,Normal,1000000,112,2531935,12.1732
+int,MultiThreadedQuickSort,Best,1000000,112,2500006,5.88358
+int,MultiThreadedMergeSort,Worst,10000,40080,25000,1.26692
+int,MultiThreadedMergeSort,Uniform,10000,40080,29997,1.16479
+int,MultiThreadedMergeSort,Normal,10000,40080,29998,1.13915
+int,MultiThreadedMergeSort,Best,10000,40080,25000,0.940666
+int,MultiThreadedMergeSort,Worst,20000,80080,50000,0.7565
+int,MultiThreadedMergeSort,Uniform,20000,80080,59998,0.878184
+int,MultiThreadedMergeSort,Normal,20000,80080,59997,0.908283
+int,MultiThreadedMergeSort,Best,20000,80080,50000,0.711417
+int,MultiThreadedMergeSort,Worst,50000,200080,125000,1.27975
+int,MultiThreadedMergeSort,Uniform,50000,200080,149998,1.75692
+int,MultiThreadedMergeSort,Normal,50000,200080,149997,1.77525
+int,MultiThreadedMergeSort,Best,50000,200080,125000,1.34308
+int,MultiThreadedMergeSort,Worst,100000,400080,250000,2.65996
+int,MultiThreadedMergeSort,Uniform,100000,400080,299998,3.58758
+int,MultiThreadedMergeSort,Normal,100000,400080,299997,3.7105
+int,MultiThreadedMergeSort,Best,100000,400080,250000,2.814
+int,MultiThreadedMergeSort,Worst,200000,800080,500000,5.64854
+int,MultiThreadedMergeSort,Uniform,200000,800080,599998,7.00706
+int,MultiThreadedMergeSort,Normal,200000,800080,599998,6.84121
+int,MultiThreadedMergeSort,Best,200000,800080,500000,5.44242
+int,MultiThreadedMergeSort,Worst,500000,2000080,1250000,12.5688
+int,MultiThreadedMergeSort,Uniform,500000,2000080,1499997,15.5642
+int,MultiThreadedMergeSort,Normal,500000,2000080,1499997,14.1703
+int,MultiThreadedMergeSort,Best,500000,2000080,1250000,13.0402
+int,MultiThreadedMergeSort,Worst,1000000,4000080,2500000,26.3542
+int,MultiThreadedMergeSort,Uniform,1000000,4000080,2999998,30.8769
+int,MultiThreadedMergeSort,Normal,1000000,4000080,2999998,29.1359
+int,MultiThreadedMergeSort,Best,1000000,4000080,2500000,21.263
+int,MultiThreadedHeapSort,Worst,10000,0,640328,0.386542
+int,MultiThreadedHeapSort,Uniform,10000,0,607896,0.425115
+int,MultiThreadedHeapSort,Normal,10000,0,607811,0.42238
+int,MultiThreadedHeapSort,Best,10000,0,576770,0.372333
+int,MultiThreadedHeapSort,Worst,20000,0,1377708,0.826375
+int,MultiThreadedHeapSort,Uniform,20000,0,1316019,0.900082
+int,MultiThreadedHeapSort,Normal,20000,0,1315496,0.884382
+int,MultiThreadedHeapSort,Best,20000,0,1256309,0.780917
+int,MultiThreadedHeapSort,Worst,50000,0,3775350,2.26975
+int,MultiThreadedHeapSort,Uniform,50000,0,3622222,2.54212
+int,MultiThreadedHeapSort,Normal,50000,0,3620728,2.50937
+int,MultiThreadedHeapSort,Best,50000,0,3462723,2.17183
+int,MultiThreadedHeapSort,Worst,100000,0,8065079,4.91475
+int,MultiThreadedHeapSort,Uniform,100000,0,7744543,5.5771
+int,MultiThreadedHeapSort,Normal,100000,0,7740847,5.54893
+int,MultiThreadedHeapSort,Best,100000,0,7418942,4.78008
+int,MultiThreadedHeapSort,Worst,200000,0,17124392,10.4802
+int,MultiThreadedHeapSort,Uniform,200000,0,16488821,12.3571
+int,MultiThreadedHeapSort,Normal,200000,0,16480246,12.2801
+int,MultiThreadedHeapSort,Best,200000,0,15843487,10.106
+int,MultiThreadedHeapSort,Worst,500000,0,45904885,27.8273
+int,MultiThreadedHeapSort,Uniform,500000,0,44469061,34.9264
+int,MultiThreadedHeapSort,Normal,500000,0,44442976,39.0326
+int,MultiThreadedHeapSort,Best,500000,0,42983347,27.0038
+int,MultiThreadedHeapSort,Worst,1000000,0,97055445,58.0571
+int,MultiThreadedHeapSort,Uniform,1000000,0,93939411,78.1578
+int,MultiThreadedHeapSort,Normal,1000000,0,93880115,2624.15
+int,MultiThreadedHeapSort,Best,1000000,0,91001660,57.7177
+int,MultiThreadedBubbleSort,Worst,10000,0,199980000,208.556
+int,MultiThreadedBubbleSort,Uniform,10000,0,125009276,141.873
+int,MultiThreadedBubbleSort,Normal,10000,0,124993384,143.361
+int,MultiThreadedBubbleSort,Best,10000,0,49995000,12.5731
+int,MultiThreadedBubbleSort,Worst,20000,0,799960000,851.594
+int,MultiThreadedBubbleSort,Uniform,20000,0,499793534,57417.2
+
+=== Experiment: double ===
+[double] 1/336 InsertionSort N=10000 Worst ...  done
+[double] 2/336 InsertionSort N=10000 Uniform ...  done
+[double] 3/336 InsertionSort N=10000 Normal ...  done
+[double] 4/336 InsertionSort N=10000 Best ...  done
+[double] 5/336 InsertionSort N=20000 Worst ...  done
+[double] 6/336 InsertionSort N=20000 Uniform ...  done
+[double] 7/336 InsertionSort N=20000 Normal ...  done
+[double] 8/336 InsertionSort N=20000 Best ...  done
+[double] 9/336 InsertionSort N=50000 Worst ...  done
+[double] 10/336 InsertionSort N=50000 Uniform ...  done
+[double] 11/336 InsertionSort N=50000 Normal ...  done
+[double] 12/336 InsertionSort N=50000 Best ...  done
+[double] 13/336 InsertionSort N=100000 Worst ...  done
+[double] 14/336 InsertionSort N=100000 Uniform ...  done
+[double] InsertionSort timeout, skipping N>=200000
+[double] 27/336 QuickSort N=10000 Worst ...  done
+[double] 28/336 QuickSort N=10000 Uniform ...  done
+[double] 29/336 QuickSort N=10000 Normal ...  done
+[double] 30/336 QuickSort N=10000 Best ...  done
+[double] 31/336 QuickSort N=20000 Worst ...  done
+[double] 32/336 QuickSort N=20000 Uniform ...  done
+[double] 33/336 QuickSort N=20000 Normal ...  done
+[double] 34/336 QuickSort N=20000 Best ...  done
+[double] 35/336 QuickSort N=50000 Worst ...  done
+[double] 36/336 QuickSort N=50000 Uniform ...  done
+[double] 37/336 QuickSort N=50000 Normal ...  done
+[double] 38/336 QuickSort N=50000 Best ...  done
+[double] 39/336 QuickSort N=100000 Worst ...  done
+[double] 40/336 QuickSort N=100000 Uniform ...  done
+[double] 41/336 QuickSort N=100000 Normal ...  done
+[double] 42/336 QuickSort N=100000 Best ...  done
+[double] 43/336 QuickSort N=200000 Worst ...  done
+[double] 44/336 QuickSort N=200000 Uniform ...  done
+[double] 45/336 QuickSort N=200000 Normal ...  done
+[double] 46/336 QuickSort N=200000 Best ...  done
+[double] 47/336 QuickSort N=500000 Worst ...  done
+[double] 48/336 QuickSort N=500000 Uniform ...  done
+[double] 49/336 QuickSort N=500000 Normal ...  done
+[double] 50/336 QuickSort N=500000 Best ...  done
+[double] 51/336 QuickSort N=1000000 Worst ...  done
+[double] 52/336 QuickSort N=1000000 Uniform ...  done
+[double] 53/336 QuickSort N=1000000 Normal ...  done
+[double] 54/336 QuickSort N=1000000 Best ...  done
+[double] 55/336 MergeSort N=10000 Worst ...  done
+[double] 56/336 MergeSort N=10000 Uniform ...  done
+[double] 57/336 MergeSort N=10000 Normal ...  done
+[double] 58/336 MergeSort N=10000 Best ...  done
+[double] 59/336 MergeSort N=20000 Worst ...  done
+[double] 60/336 MergeSort N=20000 Uniform ...  done
+[double] 61/336 MergeSort N=20000 Normal ...  done
+[double] 62/336 MergeSort N=20000 Best ...  done
+[double] 63/336 MergeSort N=50000 Worst ...  done
+[double] 64/336 MergeSort N=50000 Uniform ...  done
+[double] 65/336 MergeSort N=50000 Normal ...  done
+[double] 66/336 MergeSort N=50000 Best ...  done
+[double] 67/336 MergeSort N=100000 Worst ...  done
+[double] 68/336 MergeSort N=100000 Uniform ...  done
+[double] 69/336 MergeSort N=100000 Normal ...  done
+[double] 70/336 MergeSort N=100000 Best ...  done
+[double] 71/336 MergeSort N=200000 Worst ...  done
+[double] 72/336 MergeSort N=200000 Uniform ...  done
+[double] 73/336 MergeSort N=200000 Normal ...  done
+[double] 74/336 MergeSort N=200000 Best ...  done
+[double] 75/336 MergeSort N=500000 Worst ...  done
+[double] 76/336 MergeSort N=500000 Uniform ...  done
+[double] 77/336 MergeSort N=500000 Normal ...  done
+[double] MergeSort timeout, skipping N>=1000000
+[double] 82/336 HeapSort N=10000 Worst ...  done
+[double] 83/336 HeapSort N=10000 Uniform ...  done
+[double] 84/336 HeapSort N=10000 Normal ...  done
+[double] 85/336 HeapSort N=10000 Best ...  done
+[double] 86/336 HeapSort N=20000 Worst ...  done
+[double] 87/336 HeapSort N=20000 Uniform ...  done
+[double] 88/336 HeapSort N=20000 Normal ...  done
+[double] 89/336 HeapSort N=20000 Best ...  done
+[double] 90/336 HeapSort N=50000 Worst ...  done
+[double] 91/336 HeapSort N=50000 Uniform ...  done
+[double] 92/336 HeapSort N=50000 Normal ...  done
+[double] 93/336 HeapSort N=50000 Best ...  done
+[double] 94/336 HeapSort N=100000 Worst ...  done
+[double] 95/336 HeapSort N=100000 Uniform ...  done
+[double] 96/336 HeapSort N=100000 Normal ...  done
+[double] 97/336 HeapSort N=100000 Best ...  done
+[double] 98/336 HeapSort N=200000 Worst ...  done
+[double] 99/336 HeapSort N=200000 Uniform ...  done
+[double] 100/336 HeapSort N=200000 Normal ...  done
+[double] 101/336 HeapSort N=200000 Best ...  done
+[double] 102/336 HeapSort N=500000 Worst ...  done
+[double] 103/336 HeapSort N=500000 Uniform ...  done
+[double] 104/336 HeapSort N=500000 Normal ...  done
+[double] 105/336 HeapSort N=500000 Best ...  done
+[double] 106/336 HeapSort N=1000000 Worst ...  done
+[double] 107/336 HeapSort N=1000000 Uniform ...  done
+[double] 108/336 HeapSort N=1000000 Normal ...  done
+[double] 109/336 HeapSort N=1000000 Best ...  done
+[double] 110/336 BubbleSort N=10000 Worst ...  done
+[double] 111/336 BubbleSort N=10000 Uniform ...  done
+[double] 112/336 BubbleSort N=10000 Normal ...  done
+[double] 113/336 BubbleSort N=10000 Best ...  done
+[double] 114/336 BubbleSort N=20000 Worst ...  done
+[double] 115/336 BubbleSort N=20000 Uniform ...  done
+[double] 116/336 BubbleSort N=20000 Normal ...  done
+[double] 117/336 BubbleSort N=20000 Best ...  done
+[double] 118/336 BubbleSort N=50000 Worst ...  done
+[double] 119/336 BubbleSort N=50000 Uniform ...  done
+[double] BubbleSort timeout, skipping N>=100000
+[double] 136/336 SelectionSort N=10000 Worst ...  done
+[double] 137/336 SelectionSort N=10000 Uniform ...  done
+[double] 138/336 SelectionSort N=10000 Normal ...  done
+[double] 139/336 SelectionSort N=10000 Best ...  done
+[double] 140/336 SelectionSort N=20000 Worst ...  done
+[double] 141/336 SelectionSort N=20000 Uniform ...  done
+[double] 142/336 SelectionSort N=20000 Normal ...  done
+[double] SelectionSort timeout, skipping N>=50000
+[double] 163/336 ShellSort N=10000 Worst ...  done
+[double] 164/336 ShellSort N=10000 Uniform ...  done
+[double] 165/336 ShellSort N=10000 Normal ...  done
+[double] 166/336 ShellSort N=10000 Best ...  done
+[double] 167/336 ShellSort N=20000 Worst ...  done
+[double] 168/336 ShellSort N=20000 Uniform ...  done
+[double] 169/336 ShellSort N=20000 Normal ...  done
+[double] 170/336 ShellSort N=20000 Best ...  done
+[double] 171/336 ShellSort N=50000 Worst ...  done
+[double] 172/336 ShellSort N=50000 Uniform ...  done
+[double] 173/336 ShellSort N=50000 Normal ...  done
+[double] 174/336 ShellSort N=50000 Best ...  done
+[double] 175/336 ShellSort N=100000 Worst ...  done
+[double] 176/336 ShellSort N=100000 Uniform ...  done
+[double] 177/336 ShellSort N=100000 Normal ...  done
+[double] 178/336 ShellSort N=100000 Best ...  done
+[double] 179/336 ShellSort N=200000 Worst ...  done
+[double] 180/336 ShellSort N=200000 Uniform ...  done
+[double] 181/336 ShellSort N=200000 Normal ...  done
+[double] 182/336 ShellSort N=200000 Best ...  done
+[double] 183/336 ShellSort N=500000 Worst ...  done
+[double] 184/336 ShellSort N=500000 Uniform ...  done
+[double] 185/336 ShellSort N=500000 Normal ...  done
+[double] 186/336 ShellSort N=500000 Best ...  done
+[double] 187/336 ShellSort N=1000000 Worst ...  done
+[double] 188/336 ShellSort N=1000000 Uniform ...  done
+[double] 189/336 ShellSort N=1000000 Normal ...  done
+[double] 190/336 ShellSort N=1000000 Best ...  done
+[double] 191/336 MultiThreadedInsertionSort N=10000 Worst ...  done
+[double] 192/336 MultiThreadedInsertionSort N=10000 Uniform ...  done
+[double] MultiThreadedInsertionSort timeout, skipping N>=20000
+[double] 217/336 MultiThreadedQuickSort N=10000 Worst ...  done
+[double] 218/336 MultiThreadedQuickSort N=10000 Uniform ...  done
+[double] 219/336 MultiThreadedQuickSort N=10000 Normal ...  done
+[double] 220/336 MultiThreadedQuickSort N=10000 Best ...  done
+[double] 221/336 MultiThreadedQuickSort N=20000 Worst ...  done
+[double] 222/336 MultiThreadedQuickSort N=20000 Uniform ...  done
+[double] 223/336 MultiThreadedQuickSort N=20000 Normal ...  done
+[double] 224/336 MultiThreadedQuickSort N=20000 Best ...  done
+[double] 225/336 MultiThreadedQuickSort N=50000 Worst ...  done
+[double] 226/336 MultiThreadedQuickSort N=50000 Uniform ...  done
+[double] 227/336 MultiThreadedQuickSort N=50000 Normal ...  done
+[double] 228/336 MultiThreadedQuickSort N=50000 Best ...  done
+[double] 229/336 MultiThreadedQuickSort N=100000 Worst ...  done
+[double] 230/336 MultiThreadedQuickSort N=100000 Uniform ...  done
+[double] 231/336 MultiThreadedQuickSort N=100000 Normal ...  done
+[double] 232/336 MultiThreadedQuickSort N=100000 Best ...  done
+[double] 233/336 MultiThreadedQuickSort N=200000 Worst ...  done
+[double] 234/336 MultiThreadedQuickSort N=200000 Uniform ...  done
+[double] 235/336 MultiThreadedQuickSort N=200000 Normal ...  done
+[double] 236/336 MultiThreadedQuickSort N=200000 Best ...  done
+[double] 237/336 MultiThreadedQuickSort N=500000 Worst ...  done
+[double] 238/336 MultiThreadedQuickSort N=500000 Uniform ...  done
+[double] 239/336 MultiThreadedQuickSort N=500000 Normal ...  done
+[double] 240/336 MultiThreadedQuickSort N=500000 Best ...  done
+[double] 241/336 MultiThreadedQuickSort N=1000000 Worst ...  done
+[double] 242/336 MultiThreadedQuickSort N=1000000 Uniform ...  done
+[double] 243/336 MultiThreadedQuickSort N=1000000 Normal ...  done
+[double] 244/336 MultiThreadedQuickSort N=1000000 Best ...  done
+[double] 245/336 MultiThreadedMergeSort N=10000 Worst ...  done
+[double] 246/336 MultiThreadedMergeSort N=10000 Uniform ...  done
+[double] 247/336 MultiThreadedMergeSort N=10000 Normal ...  done
+[double] 248/336 MultiThreadedMergeSort N=10000 Best ...  done
+[double] 249/336 MultiThreadedMergeSort N=20000 Worst ...  done
+[double] 250/336 MultiThreadedMergeSort N=20000 Uniform ...  done
+[double] 251/336 MultiThreadedMergeSort N=20000 Normal ...  done
+[double] 252/336 MultiThreadedMergeSort N=20000 Best ...  done
+[double] 253/336 MultiThreadedMergeSort N=50000 Worst ...  done
+[double] 254/336 MultiThreadedMergeSort N=50000 Uniform ...  done
+[double] 255/336 MultiThreadedMergeSort N=50000 Normal ...  done
+[double] 256/336 MultiThreadedMergeSort N=50000 Best ...  done
+[double] 257/336 MultiThreadedMergeSort N=100000 Worst ...  done
+[double] 258/336 MultiThreadedMergeSort N=100000 Uniform ...  done
+[double] 259/336 MultiThreadedMergeSort N=100000 Normal ...  done
+[double] 260/336 MultiThreadedMergeSort N=100000 Best ...  done
+[double] 261/336 MultiThreadedMergeSort N=200000 Worst ...  done
+[double] 262/336 MultiThreadedMergeSort N=200000 Uniform ...  done
+[double] 263/336 MultiThreadedMergeSort N=200000 Normal ...  done
+[double] 264/336 MultiThreadedMergeSort N=200000 Best ...  done
+[double] 265/336 MultiThreadedMergeSort N=500000 Worst ...  done
+[double] 266/336 MultiThreadedMergeSort N=500000 Uniform ...  done
+[double] 267/336 MultiThreadedMergeSort N=500000 Normal ...  done
+[double] 268/336 MultiThreadedMergeSort N=500000 Best ...  done
+[double] 269/336 MultiThreadedMergeSort N=1000000 Worst ...  done
+[double] 270/336 MultiThreadedMergeSort N=1000000 Uniform ...  done
+[double] 271/336 MultiThreadedMergeSort N=1000000 Normal ...  done
+[double] 272/336 MultiThreadedMergeSort N=1000000 Best ...  done
+[double] 273/336 MultiThreadedHeapSort N=10000 Worst ...  done
+[double] 274/336 MultiThreadedHeapSort N=10000 Uniform ...  done
+[double] 275/336 MultiThreadedHeapSort N=10000 Normal ...  done
+[double] 276/336 MultiThreadedHeapSort N=10000 Best ...  done
+[double] 277/336 MultiThreadedHeapSort N=20000 Worst ...  done
+[double] 278/336 MultiThreadedHeapSort N=20000 Uniform ...  done
+[double] 279/336 MultiThreadedHeapSort N=20000 Normal ...  done
+[double] 280/336 MultiThreadedHeapSort N=20000 Best ...  done
+[double] 281/336 MultiThreadedHeapSort N=50000 Worst ...  done
+[double] 282/336 MultiThreadedHeapSort N=50000 Uniform ...  done
+[double] 283/336 MultiThreadedHeapSort N=50000 Normal ...  done
+[double] 284/336 MultiThreadedHeapSort N=50000 Best ...  done
+[double] 285/336 MultiThreadedHeapSort N=100000 Worst ...  done
+[double] 286/336 MultiThreadedHeapSort N=100000 Uniform ...  done
+[double] 287/336 MultiThreadedHeapSort N=100000 Normal ...  done
+[double] 288/336 MultiThreadedHeapSort N=100000 Best ...  done
+[double] 289/336 MultiThreadedHeapSort N=200000 Worst ...  done
+[double] 290/336 MultiThreadedHeapSort N=200000 Uniform ...  done
+[double] 291/336 MultiThreadedHeapSort N=200000 Normal ...  done
+[double] 292/336 MultiThreadedHeapSort N=200000 Best ...  done
+[double] 293/336 MultiThreadedHeapSort N=500000 Worst ...  done
+[double] 294/336 MultiThreadedHeapSort N=500000 Uniform ...  done
+[double] 295/336 MultiThreadedHeapSort N=500000 Normal ...  done
+[double] 296/336 MultiThreadedHeapSort N=500000 Best ...  done
+[double] 297/336 MultiThreadedHeapSort N=1000000 Worst ...  done
+[double] 298/336 MultiThreadedHeapSort N=1000000 Uniform ...  done
+[double] 299/336 MultiThreadedHeapSort N=1000000 Normal ...  done
+[double] 300/336 MultiThreadedHeapSort N=1000000 Best ...  done
+[double] 301/336 MultiThreadedBubbleSort N=10000 Worst ...  done
+[double] 302/336 MultiThreadedBubbleSort N=10000 Uniform ...  done
+[double] MultiThreadedBubbleSort timeout, skipping N>=20000
